@@ -1,0 +1,8 @@
+/* Layout: funnel, many to few (skill L5). Stages narrow downward; a mint payoff closes it. */
+  .board.is-funnel { position: relative; flex: 1; margin: 40px 40px 30px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 24px; }
+  .is-funnel .card { flex: 1; display: grid; grid-template-columns: 1fr 1.25fr; column-gap: 26px; align-items: center; padding: 30px 74px 22px 30px; }
+  .is-funnel .card h3 { font-size: 30px; margin: 0; padding-right: 0 !important; }
+  .is-funnel .card .body { font-size: 21.5px; line-height: 1.36; }
+  .is-funnel .card > .ic { top: 50%; transform: translateY(-50%); }
+  .is-funnel .payoff { width: 56%; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }

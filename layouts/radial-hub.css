@@ -1,0 +1,25 @@
+/* Layout: radial hub board (skill L11). The whole stack grouped by job, every group wired into one engine. */
+  .board.is-radial-hub { position: relative; flex: 1; margin: 40px 26px 30px; display: grid; grid-template-columns: 1fr 330px 1fr; grid-template-rows: auto 1fr auto; gap: 52px 34px; }
+  .rh-hub {
+    grid-row: 2; grid-column: 2; align-self: center; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
+    padding: 30px 22px 26px; border-radius: 30px; color: #fff;
+    background: radial-gradient(120% 80% at 50% 0%, rgba(255,103,25,.30), transparent 55%), linear-gradient(180deg, var(--purple), var(--purple-deep));
+    box-shadow: var(--shadow-hub), 0 0 0 12px rgba(70,49,135,.06), inset 0 0 0 1.5px rgba(255,255,255,.14);
+  }
+  .rh-hub .lbl { font-family: var(--font-mono); font-size: 15px; letter-spacing: .14em; color: #FFB38A; font-weight: 600; }
+  .rh-hub h2 { font-family: var(--font-display); font-weight: 400; font-size: 32px; line-height: 1.05; }
+  .rh-hub p { font-size: 18px; color: rgba(255,255,255,.78); line-height: 1.3; }
+  .is-radial-hub .card { padding: 34px 18px 18px; z-index: 3; }
+  .is-radial-hub .card.top { grid-row: 1; grid-column: 1 / -1; }
+  .is-radial-hub .card.bottom { grid-row: 3; grid-column: 1 / -1; }
+  .is-radial-hub .card.left { grid-row: 2; grid-column: 1; }
+  .is-radial-hub .card.right { grid-row: 2; grid-column: 3; }
+  .tools { display: grid; gap: 14px; }
+  .top .tools, .bottom .tools { grid-template-columns: repeat(4, 1fr); }
+  .left .tools, .right .tools { grid-template-columns: 1fr; height: 100%; align-content: space-evenly; }
+  .tool { display: flex; align-items: center; gap: 14px; }
+  .tool b { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+  .tool small { display: block; font-size: 17px; font-weight: 500; color: var(--ink-soft); margin-top: 2px; }
+  .is-radial-hub .card .what { font-size: 19px; color: var(--ink-soft); margin: -4px 0 14px; }
+  .left .what, .right .what { margin-bottom: 4px; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }

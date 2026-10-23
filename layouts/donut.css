@@ -1,0 +1,17 @@
+/* Layout: donut (skill BP-donut). Ring on top with the headline number inside, legend cards below. */
+  .board.is-donut { position: relative; flex: 1; margin: 30px 30px 28px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+  .is-donut .ring { position: relative; width: 460px; height: 460px; flex: none; }
+  .is-donut .ring svg { position: absolute; inset: 0; filter: drop-shadow(0 18px 30px rgba(70,49,135,.18)); }
+  .is-donut .centre { position: absolute; inset: 104px; border-radius: 50%; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: var(--shadow-card), inset 0 0 0 1.5px var(--line); }
+  .is-donut .centre b { font-family: var(--font-display); font-weight: 400; font-size: 64px; color: var(--purple); line-height: 1; }
+  .is-donut .centre span { margin-top: 8px; font-size: 19px; font-weight: 600; color: var(--ink-soft); max-width: 170px; line-height: 1.25; }
+  .is-donut .legend { flex: 1; grid-auto-rows: 1fr; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; }
+  .is-donut .card { display: flex; flex-direction: row; align-items: center; gap: 16px; padding: 18px 22px; }
+  .is-donut .sw { width: 26px; height: 26px; border-radius: 7px; background: var(--h); flex: none; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--h-text, var(--h)) 40%, transparent); }
+  .is-donut .txt { flex: 1; }
+  .is-donut h3 { font-size: 29px; margin-bottom: 4px; }
+  .is-donut .body { font-size: 20px; }
+  .is-donut .pct { font-family: var(--font-display); font-weight: 400; font-size: 48px; color: var(--h-text, var(--h)); }
+  .example-chip { position: absolute; top: 4px; right: -170px; display: inline-flex; align-items: center; gap: 6px; font-size: 17px; font-weight: 600; color: var(--ink-soft); background: #fff; border: 1.5px dashed var(--line); border-radius: 999px; padding: 4px 12px; z-index: 2; white-space: nowrap; }
+  .is-donut .plate { opacity: 0; }
+  @container style(--title-ink: #FFFFFF) { .is-donut .plate { opacity: 1; } }

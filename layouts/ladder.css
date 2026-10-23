@@ -1,0 +1,12 @@
+/* Layout: ladder, levels that build on each other (skill tiered stack). Colour deepens per level. */
+  .board.is-ladder { position: relative; flex: 1; margin: 40px 30px 30px; display: flex; flex-direction: column; gap: 16px; }
+  .is-ladder .card {
+    flex: 1; display: grid; grid-template-columns: 74px 1fr 230px; align-items: center; gap: 22px; padding: 16px 22px 16px 16px;
+    background: color-mix(in srgb, var(--h) calc(6% + var(--lvl) * 16%), #fff);
+    margin-left: calc((1 - var(--lvl)) * 60px);
+  }
+  .lvl { width: 74px; height: 74px; border-radius: 20px; display: grid; place-items: center; background: var(--h); color: var(--on-h, #fff); font-family: var(--font-display); font-size: 36px; }
+  .is-ladder h3 { font-size: 30px; margin-bottom: 5px; }
+  .is-ladder .body { font-size: 21px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+  .chips span { background: #fff; border: 1.5px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 17px; font-weight: 600; white-space: nowrap; }

@@ -1,0 +1,20 @@
+/* Layout: hub with 8 cards around a centre card (ref 1). */
+  .board {
+    position: relative; flex: 1; margin: 44px 26px 28px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 26px 22px;
+  }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+  .hub {
+    position: relative; border-radius: 26px; overflow: hidden;
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(255,103,25,.28) 0%, transparent 55%),
+      radial-gradient(90% 70% at 50% 110%, rgba(122,77,255,.45) 0%, transparent 60%),
+      linear-gradient(180deg, var(--purple) 0%, var(--purple-deep) 100%);
+    box-shadow: var(--shadow-hub), inset 0 0 0 1.5px rgba(255,255,255,.12);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    color: #fff; margin: 18px 26px;
+  }
+  .hub img { width: 130px; height: 130px; object-fit: contain; margin-bottom: -6px; }
+  .hub h2 { font-family: var(--font-display); font-weight: 400; font-size: 30px; letter-spacing: -0.01em; }
+  .hub p { margin-top: 6px; font-size: 15px; color: rgba(255,255,255,.72); font-weight: 500; }

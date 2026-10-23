@@ -1,0 +1,20 @@
+/* Layout: tree, one root breaks down (skill L8). Root on top, branches with leaf chips. */
+  .board.is-tree { position: relative; flex: 1; margin: 40px 26px 30px; display: flex; flex-direction: column; gap: 90px; }
+  .root {
+    align-self: center; display: flex; align-items: center; gap: 18px; padding: 26px 44px 26px 28px; border-radius: 28px; color: #fff;
+    background: radial-gradient(120% 90% at 50% 0%, rgba(255,103,25,.28), transparent 60%), linear-gradient(180deg, var(--purple), var(--purple-deep));
+    box-shadow: var(--shadow-hub), inset 0 0 0 1.5px rgba(255,255,255,.12);
+  }
+  .root img { width: 92px; height: 92px; }
+  .root h2 { font-family: var(--font-display); font-weight: 400; font-size: 40px; }
+  .root p { font-size: 20px; color: rgba(255,255,255,.75); margin-top: 4px; }
+  .branches { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .is-tree .card h3 { font-size: 30px; }
+  .is-tree .body { font-size: 22px; line-height: 1.38; margin-bottom: 18px; }
+  .leaves { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+  .leaves li { display: flex; align-items: center; gap: 10px; background: #fff; border: 1.5px solid var(--line); border-radius: 14px; padding: 19px 16px; font-size: 21.5px; font-weight: 600; }
+  .leaves li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--h-text, var(--h)); flex: none; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+  .is-tree .leaves { flex: 1; }
+  .is-tree .leaves li { flex: 1; max-height: 92px; }
+  .is-tree .best { font-size: 18.5px; }

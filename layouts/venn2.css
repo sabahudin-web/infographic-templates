@@ -1,0 +1,23 @@
+/* Layout: two-circle venn, two sets and the overlap (static skill 17). Three cards below. */
+  .board.is-venn2 { position: relative; flex: 1; margin: 30px 30px 30px; display: flex; flex-direction: column; gap: 26px; }
+  .v2-stage { position: relative; flex: 1; min-height: 470px; }
+  .v2-circle {
+    position: absolute; width: var(--d); height: var(--d); border-radius: 50%; transform: translate(-50%, -50%);
+    background: color-mix(in srgb, var(--h-line, var(--h)) 22%, transparent); border: 2.5px solid var(--h-line, var(--h-text, var(--h)));
+    display: grid; place-items: center;
+  }
+  .v2-label { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; z-index: 1; }
+  .v2-label b { font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.05; color: var(--paper-ink); }
+  .v2-label small { font-size: 18px; font-weight: 600; color: var(--paper-ink-soft); line-height: 1.3; }
+  .v2-label .ic { width: 54px; height: 54px; background: #fff; }
+  .v2-core {
+    position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 16px 18px; border-radius: 20px; width: 168px; text-align: center; z-index: 2;
+    background: var(--b-mint); color: var(--purple); font-weight: 800; font-size: 20px; line-height: 1.2;
+    box-shadow: inset 0 0 0 2px #fff, 0 18px 34px -16px rgba(47,143,87,.75);
+  }
+  .v2-core svg { color: var(--b-mint-text); }
+  .v2-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+  .is-venn2 .card { padding: 32px 20px 18px; }
+  .is-venn2 .card h3 { font-size: 27px; margin-bottom: 8px; }
+  .is-venn2 .body { font-size: 21px; line-height: 1.4; }

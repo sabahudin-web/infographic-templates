@@ -1,0 +1,53 @@
+{
+  "layout": "bars",
+  "highlight": "sticker",
+  "title": [
+    "What It Costs to",
+    "<g>Work With Me</g>"
+  ],
+  "subtitle": "<b>Real prices, one scale.</b> Start small, grow when it works.",
+  "cards": [
+    {
+      "title": "Academy",
+      "icon": "layers",
+      "body": "Learn it yourself, at your pace.",
+      "value": 17,
+      "label": "€17",
+      "unit": "per month"
+    },
+    {
+      "title": "Coaching call",
+      "icon": "message-circle",
+      "body": "One hour on your problem.",
+      "value": 400,
+      "label": "€400",
+      "unit": "per hour"
+    },
+    {
+      "title": "AI Audit",
+      "icon": "search",
+      "body": "Find what to fix first.",
+      "value": 750,
+      "label": "€750",
+      "unit": "once"
+    },
+    {
+      "title": "AI Ops pilot",
+      "icon": "rocket",
+      "body": "One month, a first step if unsure.",
+      "value": 2000,
+      "label": "€2,000",
+      "unit": "one month",
+      "pick": "Start here"
+    },
+    {
+      "title": "AI Ops Partner",
+      "icon": "workflow",
+      "body": "Builds run inside it, 3 months to start.",
+      "value": 6000,
+      "label": "€6,000",
+      "unit": "3 months, €2,000/month"
+    }
+  ],
+  "note": "Community is free. Full payment upfront by default."
+}

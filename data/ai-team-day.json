@@ -1,0 +1,60 @@
+{
+  "layout": "schedule",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "When My AI Team",
+    "<g>Clocks In</g>"
+  ],
+  "subtitle": "<b>Six timers, one day.</b> Each one switches on once its room passes its tests.",
+  "cards": [
+    {
+      "time": "06:30",
+      "every": "Every day",
+      "icon": "eye",
+      "title": "The watchdog checks",
+      "body": "Did every timer run? Did anything <b>run twice or overspend?</b>",
+      "chip": "/status"
+    },
+    {
+      "time": "07:00",
+      "every": "Mondays",
+      "icon": "calendar",
+      "title": "Growth plans the week",
+      "body": "Drafts the week's content, <b>ready for my yes.</b>",
+      "chip": "monday_0700"
+    },
+    {
+      "time": "Every 2h",
+      "every": "All day",
+      "icon": "workflow",
+      "title": "Operations does a round",
+      "body": "Picks up new work and <b>drafts what's due.</b>",
+      "chip": "every_2h"
+    },
+    {
+      "time": "Every 15m",
+      "every": "All day",
+      "icon": "refresh-cw",
+      "title": "The runner ticks",
+      "body": "Hands each new event to <b>the rooms that care.</b>",
+      "chip": "/tick"
+    },
+    {
+      "time": "22:00",
+      "every": "Every day",
+      "icon": "lightbulb",
+      "title": "It learns from today",
+      "body": "Every yes, edit and no <b>becomes an example.</b>",
+      "chip": "/learn"
+    },
+    {
+      "time": "06:00",
+      "every": "Fridays",
+      "icon": "git-pull-request",
+      "title": "It proposes an upgrade",
+      "body": "One change to a playbook, <b>for me to accept.</b>",
+      "chip": "/self-update"
+    }
+  ]
+}

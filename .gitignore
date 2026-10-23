@@ -1,0 +1,6 @@
+# renders and scratch builds; examples/ holds the committed stills
+out/
+work/
+.env
+node_modules/
+.DS_Store

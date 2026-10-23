@@ -1,0 +1,16 @@
+/* Layout: split stat (static skill 06-big-stat-split). A big share panel over its small remainder. */
+  .board.is-split-stat { position: relative; flex: 1; margin: 40px 30px 30px; display: flex; flex-direction: column; gap: 22px; }
+  .splits { flex: 1; display: flex; flex-direction: column; gap: 24px; }
+  .is-split-stat .split { flex-basis: 0; display: flex; flex-direction: row; align-items: center; gap: 34px; padding: 34px 40px 26px; }
+  .is-split-stat .split > .ic { position: absolute; top: 18px; right: 18px; }
+  .is-split-stat .num { font-family: var(--font-display); font-weight: 400; line-height: .9; letter-spacing: -0.03em; color: var(--h-text, var(--h)); font-size: 120px; flex: none; }
+  .is-split-stat .big .num { font-size: 210px; }
+  .is-split-stat .txt h3 { font-size: 32px; margin-bottom: 10px; padding-right: 30px; }
+  .is-split-stat .big .txt h3 { font-size: 36px; }
+  .is-split-stat .body { font-size: 23px; line-height: 1.42; }
+  .is-split-stat .txt { flex: 1; }
+  .split-bar { display: flex; gap: 6px; height: 22px; }
+  .split-bar span { border-radius: 999px; }
+  .is-split-stat .example-chip { position: absolute; top: -34px; right: 0; font-size: 17px; font-weight: 600; color: var(--ink-soft); background: #fff; border: 1.5px dashed var(--line); border-radius: 999px; padding: 4px 12px; }
+  .is-split-stat .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .is-split-stat .chips span { background: #fff; border: 1.5px solid color-mix(in srgb, var(--h) 25%, #fff); border-radius: 999px; padding: 8px 15px; font-size: 18px; font-weight: 600; color: var(--ink); }

@@ -1,0 +1,46 @@
+{
+  "layout": "spine",
+  "title": [
+    "A Week With an",
+    "<g>AI Ops Team</g>"
+  ],
+  "subtitle": "<b>Same week every week.</b> It gets better each Friday.",
+  "cards": [
+    {
+      "when": "Monday 07:00",
+      "tag": "Plan",
+      "icon": "calendar",
+      "title": "The week starts itself",
+      "body": "A timer kicks off every room. <b>Nobody presses start.</b>"
+    },
+    {
+      "when": "Tuesday",
+      "tag": "Draft",
+      "icon": "file-text",
+      "title": "Drafts land in one inbox",
+      "body": "Emails, posts, reports. <b>Scored before I see them.</b>"
+    },
+    {
+      "when": "Wednesday",
+      "tag": "Approve",
+      "icon": "circle-check",
+      "title": "I approve in minutes",
+      "body": "Yes, edit or no. <b>Nothing leaves without it.</b>"
+    },
+    {
+      "when": "Thursday",
+      "tag": "Measure",
+      "icon": "chart-no-axes-column",
+      "title": "It checks what worked",
+      "body": "Replies, reach, paid invoices. <b>Real numbers only.</b>"
+    },
+    {
+      "when": "Friday",
+      "tag": "Learn",
+      "icon": "git-pull-request",
+      "title": "It proposes one upgrade",
+      "body": "A change to how it works, <b>for me to accept.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

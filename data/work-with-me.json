@@ -1,0 +1,87 @@
+{
+  "layout": "column-flow",
+  "highlight": "sticker",
+  "title": [
+    "Three Ways to",
+    "<g>Work With Me</g>"
+  ],
+  "subtitle": "<b>Start small.</b> Every step proves one thing first.",
+  "band": {
+    "title": "It always starts with: where are you stuck?",
+    "chips": [
+      "Your week",
+      "Your tools",
+      "Your team",
+      "Your goals"
+    ]
+  },
+  "cards": [
+    {
+      "tag": "Find",
+      "icon": "search",
+      "title": "AI Audit",
+      "price": "€750",
+      "per": "once",
+      "sections": [
+        {
+          "label": "For you if",
+          "text": "You know AI could help, but not where to start."
+        },
+        {
+          "label": "You get",
+          "text": "Where AI fits in your business, and the one workflow to fix first."
+        },
+        {
+          "label": "Next step",
+          "text": "The pilot, if you want proof first."
+        }
+      ]
+    },
+    {
+      "tag": "Prove",
+      "icon": "rocket",
+      "title": "AI Ops Pilot",
+      "price": "€2,000",
+      "per": "1 month",
+      "sections": [
+        {
+          "label": "For you if",
+          "text": "You want proof before a bigger commitment."
+        },
+        {
+          "label": "You get",
+          "text": "One workflow built, shown working and tested together."
+        },
+        {
+          "label": "Next step",
+          "text": "If you continue, Partner starts after it."
+        }
+      ]
+    },
+    {
+      "tag": "Grow",
+      "icon": "workflow",
+      "title": "AI Ops Partner",
+      "price": "€2,000",
+      "per": "a month",
+      "sections": [
+        {
+          "label": "For you if",
+          "text": "You want an AI Ops team running next to yours."
+        },
+        {
+          "label": "You get",
+          "text": "Builds and upgrades every month. 3 months to start."
+        },
+        {
+          "label": "Next step",
+          "text": "Your team runs it without me."
+        }
+      ]
+    }
+  ],
+  "payoff": {
+    "icon": "badge-check",
+    "text": "A system you own and can grow"
+  }
+}

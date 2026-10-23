@@ -1,0 +1,20 @@
+/* Layout: iceberg, the visible tip and the bigger part underneath (static skill 13). */
+  .board.is-iceberg { position: relative; flex: 1; margin: 30px 30px 0; display: grid; grid-template-columns: 1fr 360px 1fr; grid-template-rows: 1.05fr 1fr 1fr 1fr; gap: 22px 0; padding-bottom: 26px; }
+  .ib-water { position: absolute; left: -30px; right: -30px; bottom: 0; z-index: 0;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--paper-ink) 10%, transparent), color-mix(in srgb, var(--paper-ink) 3%, transparent)); }
+  .ib-berg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; overflow: visible; }
+  .ib-ice-above { fill: #FFFFFF; stroke: color-mix(in srgb, var(--paper-ink) 25%, transparent); stroke-width: 2; }
+  .ib-ice-under { fill: color-mix(in srgb, var(--b-lavender) 55%, transparent); stroke: color-mix(in srgb, var(--paper-ink) 30%, transparent); stroke-width: 2; stroke-dasharray: 6 6; }
+  .ib-line { stroke: var(--paper-ink); stroke-opacity: .5; stroke-width: 2; stroke-dasharray: 10 8; }
+  .ib-label { position: absolute; left: 0; z-index: 1; font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--paper-ink-soft); }
+  .is-iceberg .card { z-index: 1; padding: 30px 20px 14px 20px; justify-content: center; }
+  .is-iceberg .card > .ic { top: 12px; right: 12px; width: 38px; height: 38px; }
+  .is-iceberg .card:has(> .ic) h3 { padding-right: 40px; }
+  .is-iceberg .card h3 { font-size: 24px; margin-bottom: 8px; }
+  .is-iceberg .body { font-size: 20px; line-height: 1.36; }
+  .is-iceberg .ib-tip { align-self: center; }
+  .is-iceberg .ib-tip h3 { font-size: 27px; }
+  .is-iceberg .ib-tip .body { font-size: 20px; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }
+  .ib-label.centre { transform: translateX(-50%); text-align: center; width: 300px; color: var(--paper-ink); font-size: 16px; }
+  .ib-label.above { font-size: 17px; max-width: 300px; line-height: 1.5; }

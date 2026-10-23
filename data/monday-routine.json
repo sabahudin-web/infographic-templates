@@ -1,0 +1,103 @@
+{
+  "layout": "routine-board",
+  "title": [
+    "My Monday Morning,",
+    "<g>Run by AI</g>"
+  ],
+  "subtitle": "<b>Four stages before my first coffee.</b> I only do the last one.",
+  "cards": [
+    {
+      "tag": "Collect",
+      "when": "Monday 07:00",
+      "title": "Everything comes in",
+      "body": "A timer starts the run. <b>No one presses start.</b>",
+      "tiles": [
+        {
+          "logo": "gmail",
+          "label": "Email"
+        },
+        {
+          "logo": "slack",
+          "label": "Team chat"
+        },
+        {
+          "logo": "calendly",
+          "label": "Bookings"
+        },
+        {
+          "logo": "linkedin",
+          "label": "DMs"
+        }
+      ]
+    },
+    {
+      "tag": "Sort",
+      "when": "07:05",
+      "title": "AI sorts it",
+      "body": "Who needs me, what can wait, <b>what's already handled.</b>",
+      "tiles": [
+        {
+          "logo": "claude",
+          "label": "Reads it all"
+        },
+        {
+          "icon": "filter",
+          "label": "Ranks by urgency"
+        },
+        {
+          "icon": "database",
+          "label": "Checks the ledger"
+        }
+      ]
+    },
+    {
+      "tag": "Draft",
+      "when": "07:20",
+      "title": "Drafts get written",
+      "body": "Replies, posts and follow-ups <b>from my best past work.</b>",
+      "tiles": [
+        {
+          "icon": "mail",
+          "label": "Replies"
+        },
+        {
+          "icon": "file-text",
+          "label": "Posts"
+        },
+        {
+          "icon": "clock",
+          "label": "Follow-ups"
+        },
+        {
+          "icon": "circle-check",
+          "label": "Critic scores"
+        }
+      ]
+    },
+    {
+      "tag": "Review",
+      "when": "08:00",
+      "title": "I approve",
+      "body": "Yes, edit or no, <b>in one inbox.</b>",
+      "tiles": [
+        {
+          "metric": "1",
+          "label": "inbox"
+        },
+        {
+          "metric": "0",
+          "label": "sent without me"
+        },
+        {
+          "metric": "5d",
+          "label": "follow-up check"
+        },
+        {
+          "metric": "48h",
+          "label": "reach check"
+        }
+      ]
+    }
+  ],
+  "highlight": "sticker"
+}

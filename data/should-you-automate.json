@@ -1,0 +1,43 @@
+{
+  "layout": "decision-tree",
+  "highlight": "sticker",
+  "title": [
+    "Should You <g>Automate</g>",
+    "This Task?"
+  ],
+  "subtitle": "<b>Four questions.</b> Every no saves you a mess.",
+  "cards": [
+    {
+      "tag": "Repeats",
+      "icon": "repeat",
+      "title": "Does it happen every week?",
+      "body": "One-offs cost more to automate than to do.",
+      "no": "Keep it manual for now"
+    },
+    {
+      "tag": "Rules",
+      "icon": "list-checks",
+      "title": "Is it done the same way each time?",
+      "body": "Two people, two ways means it is not ready.",
+      "no": "Fix the process first"
+    },
+    {
+      "tag": "Risk",
+      "icon": "shield",
+      "title": "Is it safe if it goes wrong?",
+      "body": "No money and no client name on the line.",
+      "no": "Keep your yes on every send"
+    },
+    {
+      "tag": "Tools",
+      "icon": "wrench",
+      "title": "Can it run on tools you already have?",
+      "body": "The simplest thing that does the job wins.",
+      "no": "Find a simpler version"
+    }
+  ],
+  "payoff": {
+    "icon": "rocket",
+    "text": "Automate it first"
+  }
+}

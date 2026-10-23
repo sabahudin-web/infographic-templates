@@ -1,0 +1,107 @@
+{
+  "layout": "growth-curve",
+  "highlight": "sticker",
+  "example": true,
+  "title": [
+    "One Workflow,",
+    "<g>Hours Back</g>"
+  ],
+  "subtitle": "<b>It starts slow on purpose.</b> Find and Fix come before any AI.",
+  "chart": {
+    "label": "Hours back per week",
+    "icon": "clock",
+    "yMax": 8,
+    "endLabel": "8h a week",
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0.2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        10,
+        6.6
+      ],
+      [
+        12,
+        7.6
+      ],
+      [
+        13,
+        8
+      ]
+    ],
+    "xTicks": [
+      [
+        0,
+        "Week 0"
+      ],
+      [
+        4,
+        "Week 4"
+      ],
+      [
+        8,
+        "Week 8"
+      ],
+      [
+        13,
+        "Week 13"
+      ]
+    ]
+  },
+  "cards": [
+    {
+      "when": "Week 1",
+      "x": 1,
+      "tag": "Find",
+      "icon": "search",
+      "title": "Map the week",
+      "body": "Where the hours go, written down.",
+      "best": "A map of the hours."
+    },
+    {
+      "when": "Week 3",
+      "x": 3,
+      "tag": "Fix",
+      "icon": "wrench",
+      "title": "Cut the extra steps",
+      "body": "Simpler before smarter.",
+      "best": "A process on one page."
+    },
+    {
+      "when": "Week 5",
+      "x": 5,
+      "tag": "Automate",
+      "icon": "zap",
+      "title": "First workflow live",
+      "body": "Shown working, then trusted.",
+      "best": "One thing running."
+    },
+    {
+      "when": "Week 12",
+      "x": 12,
+      "tag": "Own it",
+      "icon": "key",
+      "title": "Runs without me",
+      "body": "Yours to run and extend.",
+      "best": "A system you own."
+    }
+  ],
+  "bestLabel": "YOU GET"
+}

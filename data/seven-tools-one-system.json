@@ -1,0 +1,52 @@
+{
+  "layout": "untangle",
+  "highlight": "sticker",
+  "title": [
+    "From 7 Tools to",
+    "<g>One System</g>"
+  ],
+  "subtitle": "<b>Stop wiring tools together by hand.</b> Wire them once.",
+  "messLabel": "Your setup now",
+  "calmLabel": "With one system",
+  "system": {
+    "title": "Unstuck OS",
+    "sub": "One memory. One inbox. One loop."
+  },
+  "cards": [
+    {
+      "logo": "notion",
+      "title": "Notion",
+      "body": "Notes"
+    },
+    {
+      "logo": "slack",
+      "title": "Slack",
+      "body": "Team chat"
+    },
+    {
+      "logo": "hubspot",
+      "title": "HubSpot",
+      "body": "The CRM"
+    },
+    {
+      "logo": "calendly",
+      "title": "Calendly",
+      "body": "Bookings"
+    },
+    {
+      "logo": "zapier",
+      "title": "Zapier",
+      "body": "The glue"
+    },
+    {
+      "logo": "linkedin",
+      "title": "LinkedIn",
+      "body": "Leads and DMs"
+    },
+    {
+      "logo": "stripe",
+      "title": "Stripe",
+      "body": "Invoices"
+    }
+  ]
+}

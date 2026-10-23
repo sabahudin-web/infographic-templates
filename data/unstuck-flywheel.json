@@ -1,0 +1,66 @@
+{
+  "layout": "wheel",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "The <g>Flywheel</g>",
+    "Behind Unstuck"
+  ],
+  "subtitle": "<b>Every client turns the wheel.</b> Each turn makes the next one easier.",
+  "hub": {
+    "title": "Unstuck",
+    "sub": "Find, Fix, then Automate"
+  },
+  "groups": [
+    {
+      "name": "Attract",
+      "sub": "people find me"
+    },
+    {
+      "name": "Convert",
+      "sub": "a small first step"
+    },
+    {
+      "name": "Deliver",
+      "sub": "it runs, they own it"
+    }
+  ],
+  "cards": [
+    {
+      "group": "Attract",
+      "logo": "linkedin",
+      "title": "Post",
+      "sub": "Show the real work and the struggle"
+    },
+    {
+      "group": "Attract",
+      "icon": "message-circle",
+      "title": "Conversation",
+      "sub": "Thank, help, ask one question"
+    },
+    {
+      "group": "Convert",
+      "icon": "search",
+      "title": "Audit",
+      "sub": "€750: where AI fits first"
+    },
+    {
+      "group": "Convert",
+      "icon": "rocket",
+      "title": "Pilot",
+      "sub": "€2,000: one workflow, one month"
+    },
+    {
+      "group": "Deliver",
+      "icon": "badge-check",
+      "title": "Proof",
+      "sub": "Shown working, not described"
+    },
+    {
+      "group": "Deliver",
+      "icon": "refresh-cw",
+      "title": "Partner",
+      "sub": "€2,000 a month, the system grows"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "layout": "pipeline",
+  "title": [
+    "From <g>New Lead</g>",
+    "to Booked Call"
+  ],
+  "subtitle": "<b>Four steps.</b> Only one of them is mine.",
+  "cards": [
+    {
+      "tag": "Trigger",
+      "icon": "zap",
+      "title": "A lead comes in",
+      "chip": "new_lead",
+      "body": "The system notices it. <b>No one has to check.</b>",
+      "who": "AI"
+    },
+    {
+      "tag": "Draft",
+      "icon": "pencil-line",
+      "title": "AI writes the reply",
+      "chip": "/run sales",
+      "body": "In my voice, from <b>my best past messages.</b>",
+      "who": "AI",
+      "logo": "claude"
+    },
+    {
+      "tag": "Approve",
+      "icon": "hand",
+      "title": "I say yes",
+      "chip": "/inbox",
+      "body": "One click to approve, edit or <b>reject.</b>",
+      "who": "Me"
+    },
+    {
+      "tag": "Send",
+      "icon": "send",
+      "title": "It goes out",
+      "chip": "/execute",
+      "body": "Sent and tracked. <b>Checked again in 5 days.</b>",
+      "who": "AI",
+      "logo": "linkedin"
+    }
+  ],
+  "payoff": {
+    "icon": "calendar",
+    "text": "A booked call, in my words"
+  },
+  "highlight": "sticker"
+}

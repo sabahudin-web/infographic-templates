@@ -1,0 +1,8 @@
+/* Layout: dense list (static 03). Many thin rows: number, the item, a short note, a category pill. */
+  .board.is-dense-list { position: relative; flex: 1; margin: 32px 34px 28px; display: flex; flex-direction: column; gap: 9px; }
+  .is-dense-list .card { flex: 1; display: grid; grid-template-columns: 44px 290px 1fr auto; align-items: center; column-gap: 18px; padding: 6px 16px 6px 14px; border-radius: 14px; }
+  .is-dense-list .n { font-family: var(--font-mono); font-size: 16px; font-weight: 600; color: var(--h-text, var(--h)); }
+  .is-dense-list h3 { font-size: 23px; letter-spacing: -0.025em; margin: 0; text-decoration: line-through; text-decoration-thickness: 2.5px; text-decoration-color: color-mix(in srgb, var(--h) 70%, transparent); }
+  .is-dense-list .body { font-size: 18.5px; line-height: 1.3; }
+  .is-dense-list .pill { font-size: 15px; font-weight: 700; padding: 5px 12px; border-radius: 999px; background: color-mix(in srgb, var(--h) 14%, #fff); color: var(--h-text, var(--h)); white-space: nowrap; }
+  .is-dense-list .payoff { flex: none; margin-top: 8px; padding: 18px 24px; font-size: 26px; }

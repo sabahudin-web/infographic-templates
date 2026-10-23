@@ -1,0 +1,52 @@
+/* Brand tokens (light base, theme B Warm).
+   Every template reads these. Change a value here and every output follows. */
+
+:root {
+  /* base */
+  --paper: #FAFAF7;
+  --pattern-opacity: 0.06;
+  --ink: #16131F;
+  --ink-soft: #57536A;
+  --line: #E7E4EE;
+  --card: #FFFFFF;
+
+  /* brand */
+  --purple: #463187;
+  --purple-deep: #241A4A;
+  --orange: #FF6719;
+  --hl-marker: rgba(255, 103, 25, 0.34);  /* highlight swipe behind key title words */
+  --hl-line: #FF6719;
+  /* title sticker: soft tinted pill, words in strong brand colour (two states, the animation swaps them) */
+  --hl-bg: #FFE3D3;  --hl-ink: #E04E0B; --hl-edge: rgba(224, 78, 11, 0.16); --hl-glow: rgba(224, 78, 11, 0.45);
+  --hl-bg-2: #E6DDFF; --hl-ink-2: #463187; --hl-edge-2: rgba(70, 49, 135, 0.16); --hl-glow-2: rgba(70, 49, 135, 0.45);
+
+  /* category hues, one per card / stage, in loop order */
+  --hue-1: #2F6BFF; /* blue */
+  --hue-2: #7A4DFF; /* violet */
+  --hue-3: #E8407A; /* pink */
+  --hue-4: #FF6719; /* orange */
+  --hue-5: #17A35B; /* green */
+  --hue-6: #0E9AA7; /* teal */
+  --hue-7: #4B4FD8; /* indigo */
+  --hue-8: #E5484D; /* red */
+
+  /* type */
+  --font-display: "Archivo Black", "Inter", system-ui, sans-serif;  /* titles only, same face as the logo */
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.015em;
+
+  /* shape */
+  --radius-card: 22px;
+  --radius-chip: 10px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 0 rgba(22, 19, 31, 0.03), 0 8px 24px -12px rgba(22, 19, 31, 0.12);
+  --shadow-hub: 0 30px 60px -24px rgba(36, 26, 74, 0.55);
+
+  /* formats */
+  --linkedin-w: 1080px;
+  --linkedin-h: 1350px;
+}
+
+/* text drawn straight on the page (not inside a card); dark themes turn these light */
+:root { --paper-ink: var(--ink); --paper-ink-soft: var(--ink-soft); }

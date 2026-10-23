@@ -1,0 +1,9 @@
+/* Layout: a 3 x 3 grid of tiles (refs 4, 11). A big quiet numeral anchors each tile. */
+  .board.is-grid { position: relative; flex: 1; margin: 44px 26px 28px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 28px 20px; }
+  .is-grid .card { padding: 36px 22px 18px; }
+  .is-grid .card h3 { font-size: 28px; line-height: 1.1; margin-bottom: 12px; }
+  .is-grid .body { font-size: 20.5px; line-height: 1.38; position: relative; z-index: 1; }
+  .num {
+    position: absolute; right: 16px; bottom: 6px; font-family: var(--font-display); font-size: 104px; line-height: 1;
+    color: color-mix(in srgb, var(--h-text, var(--h)) 16%, transparent); letter-spacing: -0.04em; pointer-events: none;
+  }

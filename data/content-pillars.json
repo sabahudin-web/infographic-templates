@@ -1,0 +1,74 @@
+{
+  "layout": "content-matrix",
+  "highlight": "sticker",
+  "title": [
+    "Never Stuck for",
+    "a <g>Post Idea</g> Again"
+  ],
+  "subtitle": "<b>Three pillars, three angles each.</b> Every idea comes from real work.",
+  "columns": [
+    "Pillar",
+    "Angle",
+    "A post I'd write"
+  ],
+  "side": "For owners stuck in their tools",
+  "cards": [
+    {
+      "tag": "Stories",
+      "icon": "heart",
+      "sub": "The struggle, with real numbers",
+      "rows": [
+        {
+          "angle": "A rejection",
+          "idea": "\"I got rejected 47 times in 3 months. That's how my business started.\""
+        },
+        {
+          "angle": "A low point",
+          "idea": "My all-time low reach, and why I kept posting anyway."
+        },
+        {
+          "angle": "Why I do this",
+          "idea": "The weekend that changed how I work with clients."
+        }
+      ]
+    },
+    {
+      "tag": "The system",
+      "icon": "workflow",
+      "sub": "Before, fix, result",
+      "rows": [
+        {
+          "angle": "Before and after",
+          "idea": "My plan mode got messy input. So I built a cleaning step in front of it."
+        },
+        {
+          "angle": "One room",
+          "idea": "How my sales room drafts a reply I approve in one click."
+        },
+        {
+          "angle": "The rule",
+          "idea": "Why nothing leaves my business without my yes."
+        }
+      ]
+    },
+    {
+      "tag": "Tool news",
+      "icon": "zap",
+      "sub": "Tied to time saved",
+      "rows": [
+        {
+          "angle": "The update",
+          "idea": "\"Anthropic just dropped scheduled tasks for Claude Code.\" What it saves a small team."
+        },
+        {
+          "angle": "What it means",
+          "idea": "One update, one workflow you can switch on this week."
+        },
+        {
+          "angle": "My take",
+          "idea": "\"My prediction:\" one clear opinion on where this is going."
+        }
+      ]
+    }
+  ]
+}

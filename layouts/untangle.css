@@ -1,0 +1,35 @@
+/* Layout: untangle, many tools to one system (skill BP-untangle). Top: the mess, tangled. Bottom: one system, every tool wired to it. */
+  .board.is-untangle { position: relative; flex: 1; margin: 30px 30px 30px; display: flex; flex-direction: column; }
+  .zone-label { font-family: var(--font-mono); font-size: 16px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; text-align: center; }
+  .zone-label.mess { color: var(--b-orange-text, #E2560F); }
+  .zone-label.calm { color: var(--b-mint-text, #2F8F57); }
+  .mess-area { position: relative; height: 368px; margin-top: 14px; }
+  .is-untangle .card {
+    position: absolute; width: 236px; flex-direction: row; align-items: center; gap: 14px; padding: 13px 16px 13px 13px; z-index: 2;
+  }
+  .is-untangle .card .what { display: flex; flex-direction: column; line-height: 1.15; }
+  .is-untangle .card .what b { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .is-untangle .card .what small { font-size: 17px; color: var(--ink-soft); margin-top: 3px; }
+  .down { display: flex; justify-content: center; margin: 4px 0 10px; color: var(--title-ink, var(--purple)); opacity: .55; }
+  .sys {
+    position: relative; align-self: center; display: flex; align-items: center; gap: 20px; padding: 22px 40px 22px 26px; margin-top: 12px; border-radius: 28px; color: #fff; z-index: 2;
+    background: radial-gradient(120% 90% at 50% 0%, rgba(255,103,25,.28), transparent 60%), linear-gradient(180deg, var(--purple), var(--purple-deep));
+    box-shadow: var(--shadow-hub), inset 0 0 0 1.5px rgba(255,255,255,.12);
+  }
+  .sys img { width: 84px; height: 84px; }
+  .sys h2 { font-family: var(--font-display); font-weight: 400; font-size: 38px; }
+  .sys p { font-size: 20px; color: rgba(255,255,255,.78); margin-top: 4px; }
+  .tidy { flex: 1; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 14px 4px; }
+  .tidy .t { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 120px; z-index: 2; }
+  .tidy .t span { font-size: 17px; font-weight: 600; color: var(--paper-ink); }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }
+  .tangle path { fill: none; stroke: var(--b-orange-text, #E2560F); stroke-opacity: .28; stroke-width: 2.2; stroke-linecap: round; }
+
+  /* dark theme: the purple panel would melt into the purple page, so it goes deeper with a light edge */
+  @container style(--title-ink: #FFFFFF) {
+    .sys { background: radial-gradient(120% 100% at 50% 0%, rgba(255,103,25,.22), transparent 60%), linear-gradient(180deg, #2E2066, #21164D); box-shadow: 0 30px 60px -24px rgba(8,4,24,.7), inset 0 0 0 1.5px rgba(255,255,255,.2); }
+  }
+  @container style(--title-ink: #FFFFFF) {
+    .zone-label.calm { color: #9BE3A3; }
+    .tangle path { stroke: #FFB48F; stroke-opacity: .4; }
+  }

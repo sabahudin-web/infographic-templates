@@ -1,0 +1,65 @@
+{
+  "layout": "grid",
+  "highlight": "sticker",
+  "title": [
+    "9 Beliefs Behind",
+    "My <g>AI Work</g>"
+  ],
+  "subtitle": "<b>What I won't trade for speed.</b> One line each.",
+  "cards": [
+    {
+      "tag": "Method",
+      "title": "Find, Fix, then Automate",
+      "body": "Watch the work, make it simpler, then decide what AI does.",
+      "icon": "search"
+    },
+    {
+      "tag": "Simple",
+      "title": "The simplest thing wins",
+      "body": "Fewer parts, tools you already have, less to maintain.",
+      "icon": "sparkles"
+    },
+    {
+      "tag": "Focus",
+      "title": "One thing at a time",
+      "body": "One workflow to prove first. One next step.",
+      "icon": "target"
+    },
+    {
+      "tag": "Risk",
+      "title": "Lower your risk first",
+      "body": "A small step that proves one thing beats a big promise.",
+      "icon": "shield"
+    },
+    {
+      "tag": "Listen",
+      "title": "Find where you're stuck",
+      "body": "Then turn it around. That's where the best work starts.",
+      "icon": "message-circle"
+    },
+    {
+      "tag": "Proof",
+      "title": "Show it working",
+      "body": "A running system beats a plan in a slide deck.",
+      "icon": "eye"
+    },
+    {
+      "tag": "Honest",
+      "title": "Real numbers only",
+      "body": "No number yet? It says \"to be measured\". Never invented.",
+      "icon": "hash"
+    },
+    {
+      "tag": "Give",
+      "title": "Give first",
+      "body": "Help without an ask. The deal comes from the relationship.",
+      "icon": "heart"
+    },
+    {
+      "tag": "Yours",
+      "title": "You own it at the end",
+      "body": "It runs in your business, without me in the loop.",
+      "icon": "house"
+    }
+  ]
+}

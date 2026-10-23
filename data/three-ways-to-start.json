@@ -1,0 +1,72 @@
+{
+  "layout": "matrix",
+  "title": [
+    "Three Ways to",
+    "<g>Start</g> With Me"
+  ],
+  "subtitle": "<b>Pick by how sure you are.</b> Not by how big it sounds.",
+  "recLabel": "Start here if unsure",
+  "options": [
+    {
+      "name": "AI Audit",
+      "sub": "€750, once"
+    },
+    {
+      "name": "AI Ops Pilot",
+      "sub": "€2,000, 1 month",
+      "rec": true
+    },
+    {
+      "name": "AI Ops Partner",
+      "sub": "€2,000 / month"
+    }
+  ],
+  "cards": [
+    {
+      "tag": "How long",
+      "icon": "clock",
+      "cells": [
+        "One audit",
+        "One month",
+        "3 months to start"
+      ]
+    },
+    {
+      "tag": "You get",
+      "icon": "badge-check",
+      "cells": [
+        "A map of where AI fits",
+        "One workflow, running",
+        "Systems built and run with you"
+      ]
+    },
+    {
+      "tag": "Your risk",
+      "icon": "shield",
+      "cells": [
+        "Lowest",
+        "Small, proof early",
+        "Bigger, after proof"
+      ]
+    },
+    {
+      "tag": "Best for",
+      "icon": "target",
+      "cells": [
+        "Seeing the options",
+        "Testing it for real",
+        "Scaling what works"
+      ]
+    },
+    {
+      "tag": "After it",
+      "icon": "rocket",
+      "cells": [
+        "Pilot or Partner",
+        "Partner, if it works",
+        "More workflows"
+      ]
+    }
+  ],
+  "highlight": "sticker"
+}

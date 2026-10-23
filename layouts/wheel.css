@@ -1,0 +1,26 @@
+/* Layout: wheel / flywheel (static skill donut-wheel, flywheel). Stops around a ring, arrows carry the turn. */
+  .board.is-wheel { position: relative; flex: 1; margin: 18px 26px 26px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .wh-stage { position: relative; width: 900px; height: 900px; flex: none; }
+  .wh-ring { position: absolute; inset: 13%; border-radius: 50%; border: 2px dashed color-mix(in srgb, var(--paper-ink) 22%, transparent); }
+  .wh-hub {
+    position: absolute; left: 50%; top: 50%; width: 270px; height: 270px; transform: translate(-50%, -50%); border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 4px; padding: 26px;
+    background: radial-gradient(120% 120% at 50% 0%, #fff 0%, #F1ECFF 70%); color: var(--purple);
+    box-shadow: 0 0 0 10px color-mix(in srgb, var(--paper-ink) 8%, transparent), 0 30px 60px -24px rgba(12,6,36,.6);
+  }
+  .wh-hub img { width: 78px; height: 78px; }
+  .wh-hub b { font-family: var(--font-display); font-weight: 400; font-size: 29px; line-height: 1.05; }
+  .wh-hub span { font-size: 17px; font-weight: 600; color: var(--ink-soft); line-height: 1.3; }
+  .is-wheel .wh-stop {
+    position: absolute; left: var(--x); top: var(--y); width: 240px; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 18px 16px 18px; border-radius: 28px;
+  }
+  .is-wheel .wh-stop > .ic { position: static; width: 52px; height: 52px; border-radius: 15px; }
+  .wh-stop b { font-family: var(--font-display); font-weight: 400; font-size: 26px; color: var(--purple); line-height: 1.05; margin-top: 4px; }
+  .wh-stop > span:not(.ic):not(.logo) { font-size: 18px; line-height: 1.3; color: var(--ink-soft); font-weight: 500; }
+  .wh-legend { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .wh-key { display: inline-flex; align-items: center; gap: 9px; padding: 9px 16px; border-radius: 999px; background: #fff; box-shadow: var(--shadow-card); font-size: 17px; color: var(--ink-soft); font-weight: 500; }
+  .wh-key i { width: 12px; height: 12px; border-radius: 50%; background: var(--h-text, var(--h)); }
+  .wh-key b { color: var(--ink); font-weight: 700; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+  .is-wheel svg.links path { stroke-width: 3; stroke-opacity: .85; }

@@ -1,0 +1,55 @@
+{
+  "layout": "tree",
+  "title": [
+    "Where AI <g>Fits</g> in a",
+    "Small Business"
+  ],
+  "subtitle": "<b>Not everywhere.</b> Three places it pays off first.",
+  "root": {
+    "title": "Your business",
+    "sub": "One owner, too many tabs"
+  },
+  "cards": [
+    {
+      "tag": "Sales",
+      "icon": "user-check",
+      "title": "Win the work",
+      "body": "Drafts that sound like you, ready to approve.",
+      "leaves": [
+        "Lead replies",
+        "Follow-ups",
+        "Proposals",
+        "Call notes"
+      ],
+      "best": "Fewer leads go cold."
+    },
+    {
+      "tag": "Delivery",
+      "icon": "workflow",
+      "title": "Do the work",
+      "body": "The repeat steps run, you check the result.",
+      "leaves": [
+        "Onboarding",
+        "Weekly reports",
+        "Handovers",
+        "Check-ins"
+      ],
+      "best": "Clients see progress every week."
+    },
+    {
+      "tag": "Admin",
+      "icon": "inbox",
+      "title": "Run the place",
+      "body": "The inbox and paperwork stop eating evenings.",
+      "leaves": [
+        "Inbox triage",
+        "Invoices",
+        "Meeting notes",
+        "Scheduling"
+      ],
+      "best": "Your evenings stay yours."
+    }
+  ],
+  "highlight": "sticker",
+  "bestLabel": "YOU GET"
+}

@@ -1,0 +1,27 @@
+/* Layout: column-flow map (skill BP column-flow). One band on top feeds three columns, which feed one result. */
+  .board.is-column-flow { position: relative; flex: 1; margin: 38px 26px 30px; display: flex; flex-direction: column; gap: 46px; }
+  .cf-band {
+    z-index: 2; padding: 20px 24px 22px; border-radius: 24px; color: #fff; text-align: center;
+    background: radial-gradient(120% 100% at 50% 0%, rgba(255,103,25,.26), transparent 60%), linear-gradient(180deg, var(--purple), var(--purple-deep));
+    box-shadow: var(--shadow-hub), inset 0 0 0 1.5px rgba(255,255,255,.12);
+  }
+  .cf-band h2 { font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: -0.005em; }
+  .cf-band .chips { display: flex; justify-content: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+  .cf-band .chips span { background: rgba(255,255,255,.12); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.22); border-radius: 999px; padding: 7px 15px; font-size: 18px; font-weight: 600; }
+  .cf-cols { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .is-column-flow .card { padding: 34px 20px 18px; z-index: 2; }
+  .is-column-flow .card h3 { font-size: 30px; margin-bottom: 6px; }
+  .is-column-flow .price { font-family: var(--font-display); font-size: 38px; color: var(--h-text, var(--h)); letter-spacing: -0.01em; }
+  .is-column-flow .price small { font-family: var(--font-body); font-size: 17px; font-weight: 600; color: var(--ink-soft); margin-left: 4px; }
+  .is-column-flow .sec { margin-top: 16px; padding-top: 14px; border-top: 1.5px solid color-mix(in srgb, var(--h) 16%, #fff); }
+  .is-column-flow .sec span { display: block; font-family: var(--font-mono); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--h-text, var(--h)); margin-bottom: 6px; }
+  .is-column-flow .sec p { font-size: 21px; line-height: 1.36; color: var(--ink); }
+  .is-column-flow .sec { flex: 1; }
+  .is-column-flow .sec:last-child { flex: none; margin-top: auto; }
+  .is-column-flow .payoff { flex: none; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }
+
+  /* dark theme: the purple panel would melt into the purple page, so it goes deeper with a light edge */
+  @container style(--title-ink: #FFFFFF) {
+    .cf-band { background: radial-gradient(120% 100% at 50% 0%, rgba(255,103,25,.22), transparent 60%), linear-gradient(180deg, #2E2066, #21164D); box-shadow: 0 30px 60px -24px rgba(8,4,24,.7), inset 0 0 0 1.5px rgba(255,255,255,.2); }
+  }

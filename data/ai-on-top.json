@@ -1,0 +1,39 @@
+{
+  "layout": "pyramid",
+  "highlight": "sticker",
+  "title": [
+    "AI Goes on Top,",
+    "<g>Not First</g>"
+  ],
+  "subtitle": "<b>Never automate a mess.</b> Build from the bottom up.",
+  "cards": [
+    {
+      "tier": "Your real week",
+      "tag": "Find",
+      "icon": "search",
+      "title": "See the work as it is",
+      "body": "Every task, written down with the team. <b>The foundation.</b>"
+    },
+    {
+      "tier": "A simpler process",
+      "tag": "Fix",
+      "icon": "wrench",
+      "title": "Cut what nobody needs",
+      "body": "Fewer steps, clear rules, <b>one way of doing it.</b>"
+    },
+    {
+      "tier": "Workflows",
+      "tag": "Automate",
+      "icon": "workflow",
+      "title": "Steps that run themselves",
+      "body": "Triggers and tools you already have. <b>No copy-paste.</b>"
+    },
+    {
+      "tier": "AI",
+      "tag": "Top",
+      "icon": "sparkles",
+      "title": "AI drafts, you decide",
+      "body": "Only now does AI earn its place. <b>Your yes stays on top.</b>"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+/* Layout: growth curve (skill BP-growth-curve). Chart panel on top, milestone cards below. */
+  .board.is-growth-curve { position: relative; flex: 1; margin: 36px 26px 28px; display: flex; flex-direction: column; gap: 34px; }
+  .is-growth-curve .panel { flex: 1.7; display: flex; flex-direction: column; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card), inset 0 0 0 1.5px var(--line); padding: 20px 22px 8px; }
+  .is-growth-curve .panel-head { display: flex; align-items: center; gap: 14px; --h: var(--b-mint); --h-text: var(--b-mint-text); }
+  .is-growth-curve .panel-head b { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; flex: 1; }
+  .is-growth-curve .plot { flex: 1; position: relative; }
+  .is-growth-curve .plot svg { position: absolute; inset: 0; overflow: visible; }
+  .is-growth-curve .plot text { font-family: var(--font-body); font-size: 17px; font-weight: 600; fill: var(--ink-soft); }
+  .is-growth-curve .plot text.mk { font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+  .is-growth-curve .endlab { font-family: var(--font-display); font-size: 30px; color: #2F8F57; margin-left: 12px; }
+  .is-growth-curve .miles { flex: 1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .is-growth-curve .card { padding: 30px 18px 16px; }
+  .is-growth-curve .card:has(> .ic) h3 { padding-right: 46px; }
+  .is-growth-curve .card h3 { font-size: 26px; margin-bottom: 8px; }
+  .is-growth-curve .body { font-size: 20px; }
+  .is-growth-curve .when { font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--h-text, var(--h)); margin-bottom: 6px; }
+  .example-chip { display: inline-flex; align-items: center; font-size: 17px; font-weight: 600; color: var(--ink-soft); background: #fff; border: 1.5px dashed var(--line); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }

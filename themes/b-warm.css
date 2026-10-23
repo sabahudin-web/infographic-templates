@@ -1,0 +1,21 @@
+@import "brand-colours.css";
+/* B: warm white paper, cards tinted with the pastel of their tag */
+:root {
+  --paper: #FFFAF6; --grid-line: rgba(255,103,25,0.07); --burst: #FFD4BD; --line: #F1E2D8;
+  --hue-1: var(--b-orange); --hue-2: var(--b-purple); --hue-3: var(--b-mint); --hue-4: var(--b-orange);
+  --hue-5: var(--b-purple); --hue-6: var(--b-mint); --hue-7: var(--b-orange); --hue-8: var(--b-purple);
+  --on-h-3: var(--b-purple); --on-h-6: var(--b-purple);
+  --h-text-1: var(--b-orange-text); --h-text-4: var(--b-orange-text); --h-text-7: var(--b-orange-text);
+  --h-text-3: var(--b-mint-text); --h-text-6: var(--b-mint-text);
+  --card-fill-1: linear-gradient(180deg, var(--b-peach) 0%, #fff 55%); --card-fill-4: var(--card-fill-1); --card-fill-7: var(--card-fill-1);
+  --card-fill-2: linear-gradient(180deg, #EEE8FF 0%, #fff 55%); --card-fill-5: var(--card-fill-2); --card-fill-8: var(--card-fill-2);
+  --card-fill-3: linear-gradient(180deg, #E2F8E4 0%, #fff 55%); --card-fill-6: var(--card-fill-3);
+  --card-line-1: #FFCFB4; --card-line-4: #FFCFB4; --card-line-7: #FFCFB4;
+  --card-line-2: #D6CBF7; --card-line-5: #D6CBF7; --card-line-8: #D6CBF7;
+  --card-line-3: #AEE3B3; --card-line-6: #AEE3B3;
+  /* items 9 to 12 continue the orange / purple / mint rhythm */
+  --hue-9: var(--b-mint); --on-h-9: var(--b-purple); --h-text-9: var(--b-mint-text); --card-fill-9: var(--card-fill-3); --card-line-9: #AEE3B3;
+  --hue-10: var(--b-orange); --h-text-10: var(--b-orange-text); --card-fill-10: var(--card-fill-1); --card-line-10: #FFCFB4;
+  --hue-11: var(--b-purple); --card-fill-11: var(--card-fill-2); --card-line-11: #D6CBF7;
+  --hue-12: var(--b-mint); --on-h-12: var(--b-purple); --h-text-12: var(--b-mint-text); --card-fill-12: var(--card-fill-3); --card-line-12: #AEE3B3;
+}

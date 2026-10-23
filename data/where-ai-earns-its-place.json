@@ -1,0 +1,33 @@
+{
+  "layout": "venn2",
+  "highlight": "sticker",
+  "title": [
+    "Where AI",
+    "<g>Earns Its Place</g>"
+  ],
+  "subtitle": "<b>Not everything you hate doing.</b> Only where it overlaps.",
+  "core": "Automate this first",
+  "coreIcon": "rocket",
+  "cards": [
+    {
+      "tag": "Eats your week",
+      "set": "Work that repeats and drains you",
+      "icon": "clock",
+      "title": "What takes your time",
+      "body": "Follow-ups, reports, the inbox. <b>Same work every week.</b>"
+    },
+    {
+      "tag": "AI does well",
+      "set": "Drafting, sorting, checking",
+      "icon": "bot",
+      "title": "What AI is good at",
+      "body": "Clear rules, your examples, <b>a human yes at the end.</b>"
+    },
+    {
+      "tag": "The overlap",
+      "icon": "target",
+      "title": "Your first workflow",
+      "body": "Repeats, has clear rules and is <b>safe if it goes wrong.</b>"
+    }
+  ]
+}

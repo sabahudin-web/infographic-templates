@@ -1,0 +1,17 @@
+/* Layout: bars (skill BP-bars). One card per value, bars to one shared scale. */
+  .board.is-bars { position: relative; flex: 1; margin: 38px 30px 28px; display: flex; flex-direction: column; gap: 16px; }
+  .is-bars .card { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 18px 24px; }
+  .is-bars .row-head { display: flex; align-items: center; gap: 16px; }
+  .is-bars .card > .row-head .ic { position: static; }
+  .is-bars .names { flex: 1; }
+  .is-bars h3 { font-size: 27px; margin-bottom: 3px; }
+  .is-bars .body { font-size: 19px; }
+  .is-bars .val { text-align: right; line-height: 1; }
+  .is-bars .val b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 40px; color: var(--h-text, var(--h)); letter-spacing: -0.01em; }
+  .is-bars .val small { display: block; margin-top: 6px; font-size: 17px; font-weight: 600; color: var(--ink-soft); }
+  .is-bars .track { position: relative; height: 22px; border-radius: 999px; background: color-mix(in srgb, var(--h) 10%, #fff); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--h) 14%, transparent); }
+  .is-bars .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: linear-gradient(90deg, color-mix(in srgb, var(--h-text, var(--h)) 55%, #fff), var(--h-text, var(--h))); }
+  .is-bars .card.pick { box-shadow: 0 0 0 3px color-mix(in srgb, var(--h) 35%, transparent), var(--shadow-card); }
+  .is-bars .pick-tag { position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: var(--purple); color: #fff; font-weight: 700; font-size: 17px; padding: 6px 14px; border-radius: 999px; }
+  .bars-note { text-align: center; font-size: 18px; color: var(--ink-soft); font-weight: 500; }
+  .example-chip { position: absolute; top: -30px; right: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 17px; font-weight: 600; color: var(--ink-soft); background: #fff; border: 1.5px dashed var(--line); border-radius: 999px; padding: 4px 12px; z-index: 2; }

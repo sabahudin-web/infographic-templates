@@ -1,0 +1,55 @@
+{
+  "layout": "vertical-steps",
+  "highlight": "sticker",
+  "title": [
+    "How a Post",
+    "<g>Ships</g>"
+  ],
+  "subtitle": "<b>Five steps, one tool each.</b> I only do step three.",
+  "cards": [
+    {
+      "tag": "Draft",
+      "logo": "claude",
+      "by": "Claude Code",
+      "title": "Writes the first draft",
+      "body": "From my own best posts, not a blank page.",
+      "chip": "/run growth"
+    },
+    {
+      "tag": "Score",
+      "icon": "badge-check",
+      "by": "The critic",
+      "title": "Grades it before I see it",
+      "body": "Up to three fix rounds against my examples.",
+      "chip": "/critic-score"
+    },
+    {
+      "tag": "Approve",
+      "icon": "hand",
+      "by": "Me",
+      "title": "I say yes, edit or no",
+      "body": "One click in my inbox. Nothing goes out without it.",
+      "chip": "/inbox"
+    },
+    {
+      "tag": "Publish",
+      "logo": "linkedin",
+      "by": "LinkedIn",
+      "title": "It goes live",
+      "body": "Posted at the time I picked.",
+      "chip": "/execute"
+    },
+    {
+      "tag": "Measure",
+      "icon": "chart-no-axes-column",
+      "by": "The ledger",
+      "title": "Checks reach after 48 hours",
+      "body": "The result is saved so the next post learns.",
+      "chip": "/measure"
+    }
+  ],
+  "payoff": {
+    "icon": "sparkles",
+    "text": "Every edit makes the next post better"
+  }
+}

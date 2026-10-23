@@ -1,0 +1,39 @@
+{
+  "layout": "funnel",
+  "title": [
+    "What I <g>Automate</g>",
+    "First"
+  ],
+  "subtitle": "<b>Most tasks never make the cut.</b> Four filters, one winner.",
+  "cards": [
+    {
+      "tag": "Everything",
+      "icon": "layers",
+      "title": "Every task in a normal week",
+      "body": "I list all of it with the team. <b>Nothing is too small</b> to write down."
+    },
+    {
+      "tag": "Repeats",
+      "icon": "repeat",
+      "title": "Happens every week",
+      "body": "One-offs stay manual. <b>Repetition is where time leaks.</b>"
+    },
+    {
+      "tag": "Clear rules",
+      "icon": "list-checks",
+      "title": "Done the same way each time",
+      "body": "If two people do it two ways, <b>we fix it first.</b>"
+    },
+    {
+      "tag": "Low risk",
+      "icon": "shield",
+      "title": "Safe if it goes wrong",
+      "body": "No money, no client name on it. <b>Lower your risk first.</b>"
+    }
+  ],
+  "payoff": {
+    "icon": "rocket",
+    "text": "One workflow to prove first"
+  },
+  "highlight": "sticker"
+}

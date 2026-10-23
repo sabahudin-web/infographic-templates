@@ -1,0 +1,13 @@
+/* Layout: vertical steps (skill L2). A tool chain read top to bottom: tool tile on a rail, what happens beside it. */
+  .board.is-vertical-steps { position: relative; flex: 1; margin: 38px 40px 30px; display: flex; flex-direction: column; gap: 22px; }
+  .is-vertical-steps .card { flex: 1; flex-direction: row; align-items: center; gap: 26px; padding: 14px 26px 14px 16px; }
+  .is-vertical-steps .card .tag { left: 136px; }
+  .is-vertical-steps .card .slot { flex: none; width: 96px; display: grid; place-items: center; z-index: 2; }
+  .is-vertical-steps .card .slot .ic { width: 96px; height: 96px; border-radius: 27px; }
+  .is-vertical-steps .card .txt { flex: 1; min-width: 0; padding-top: 8px; }
+  .is-vertical-steps .card h3 { font-size: 30px; margin-bottom: 4px; padding: 0 !important; }
+  .is-vertical-steps .card .by { font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--h-text, var(--h)); }
+  .is-vertical-steps .card .body { font-size: 21px; line-height: 1.36; margin-top: 6px; }
+  .is-vertical-steps .card .chip { margin: 0; flex: none; align-self: center; }
+  .is-vertical-steps .payoff { flex: none; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 3; }

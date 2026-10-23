@@ -1,0 +1,65 @@
+{
+  "layout": "receipt",
+  "highlight": "sticker",
+  "example": true,
+  "title": [
+    "The AI Stack",
+    "You <g>Rent</g>"
+  ],
+  "subtitle": "<b>Seven tools.</b> Still copy-pasting between them.",
+  "receipt": {
+    "label": "Monthly AI stack",
+    "period": "per month",
+    "totalLabel": "Total",
+    "total": "€158",
+    "note": "and you still move the work by hand"
+  },
+  "cards": [
+    {
+      "logo": "openai",
+      "title": "ChatGPT Plus",
+      "body": "Writing help",
+      "price": "€20"
+    },
+    {
+      "logo": "claude",
+      "title": "Claude Pro",
+      "body": "More writing help",
+      "price": "€18"
+    },
+    {
+      "logo": "notion",
+      "title": "Notion AI",
+      "body": "Notes and docs",
+      "price": "€10"
+    },
+    {
+      "logo": "zapier",
+      "title": "Zapier",
+      "body": "Glue between tools",
+      "price": "€29"
+    },
+    {
+      "logo": "apollo",
+      "title": "Apollo",
+      "body": "Lead lists",
+      "price": "€49"
+    },
+    {
+      "logo": "hubspot",
+      "title": "HubSpot Starter",
+      "body": "The CRM",
+      "price": "€20"
+    },
+    {
+      "logo": "calendly",
+      "title": "Calendly",
+      "body": "Booking calls",
+      "price": "€12"
+    }
+  ],
+  "payoff": {
+    "icon": "workflow",
+    "text": "One system runs all of it"
+  }
+}

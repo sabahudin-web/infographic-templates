@@ -1,0 +1,49 @@
+{
+  "layout": "page-anatomy",
+  "highlight": "sticker",
+  "title": [
+    "Anatomy of a Page",
+    "That <g>Books Calls</g>"
+  ],
+  "subtitle": "<b>Four parts.</b> Each one does a single job.",
+  "mock": {
+    "url": "unstuck.ai",
+    "links": [
+      "Method",
+      "Pricing",
+      "Clients"
+    ],
+    "button": "Book a first chat",
+    "headline": "Your week is lost in tabs.<br>Let's fix one workflow.",
+    "sub": "For small teams who tried AI and got stuck. One month, one workflow, running in your tools.",
+    "note": "No pitch. You tell me where you're stuck.",
+    "proofTitle": "Waiting for your yes",
+    "proof": [
+      "Follow-up to a new lead",
+      "Weekly client report",
+      "Invoice for October"
+    ]
+  },
+  "cards": [
+    {
+      "tag": "Pain",
+      "title": "Their words, not mine",
+      "body": "Name the problem the way the client says it. <b>Their words beat consultant language.</b>"
+    },
+    {
+      "tag": "Who",
+      "title": "Who it's for",
+      "body": "One line that says who it helps and <b>what changes for them.</b>"
+    },
+    {
+      "tag": "Ask",
+      "title": "One clear ask",
+      "body": "One button, one next step. <b>Lower the risk first.</b>"
+    },
+    {
+      "tag": "Proof",
+      "title": "Show it working",
+      "body": "A real screen of the system running <b>beats a promise.</b>"
+    }
+  ]
+}

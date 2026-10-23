@@ -1,0 +1,46 @@
+{
+  "layout": "vanish-list",
+  "highlight": "sticker",
+  "title": [
+    "What You",
+    "<g>Stop</g> Doing"
+  ],
+  "subtitle": "<b>When one system runs the week.</b> Six jobs off your plate.",
+  "nowLabel": "NOW",
+  "cards": [
+    {
+      "icon": "pencil-line",
+      "title": "Writing every follow-up yourself",
+      "now": "Drafted from your own best examples"
+    },
+    {
+      "icon": "eye",
+      "title": "Rereading every draft twice",
+      "now": "A critic scores it before you see it"
+    },
+    {
+      "icon": "repeat",
+      "title": "Copy-pasting between tools",
+      "now": "Every room reads one shared memory"
+    },
+    {
+      "icon": "clock",
+      "title": "Remembering who to check on",
+      "now": "Replies checked after 5 days"
+    },
+    {
+      "icon": "message-circle",
+      "title": "Explaining your style to AI again",
+      "now": "Every edit becomes a lesson"
+    },
+    {
+      "icon": "shield",
+      "title": "Worrying what AI sent",
+      "now": "Nothing leaves without your yes"
+    }
+  ],
+  "payoff": {
+    "icon": "badge-check",
+    "text": "You run the business"
+  }
+}

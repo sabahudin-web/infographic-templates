@@ -1,0 +1,55 @@
+{
+  "layout": "case-study",
+  "theme": "purple-dark",
+  "example": true,
+  "title": [
+    "One Workflow,",
+    "<g>Hours Back</g>"
+  ],
+  "subtitle": "<b>How a case study looks.</b> Real client numbers go here once measured.",
+  "hero": {
+    "eyebrow": "Case study",
+    "client": "A small service business, owner-led",
+    "number": "8h",
+    "what": "back every week, from one follow-up workflow",
+    "before": {
+      "value": 10,
+      "label": "10 hours a week on follow-ups"
+    },
+    "after": {
+      "value": 2,
+      "label": "2 hours, approving drafts"
+    },
+    "tools": [
+      "hubspot",
+      "claude",
+      "gmail",
+      "slack"
+    ]
+  },
+  "cards": [
+    {
+      "tag": "Stuck",
+      "icon": "search",
+      "title": "Leads went cold",
+      "body": "Follow-ups waited for a quiet evening. <b>Most never came.</b>",
+      "best": "The work, not the people."
+    },
+    {
+      "tag": "Built",
+      "icon": "wrench",
+      "title": "One workflow first",
+      "body": "Drafts from their own best emails, <b>approved in one inbox.</b>",
+      "best": "A system they run themselves."
+    },
+    {
+      "tag": "Result",
+      "icon": "chart-no-axes-column",
+      "title": "Checked after 5 days",
+      "body": "Every lead gets a reply. <b>The owner gets evenings back.</b>",
+      "best": "Proof before the next step."
+    }
+  ],
+  "highlight": "sticker",
+  "bestLabel": "LESSON"
+}

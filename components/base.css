@@ -1,0 +1,133 @@
+/* Shared infographic parts: page, header, title sticker, byline, cards, tags, chips. Uses tokens.css. */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: var(--linkedin-w); height: var(--linkedin-h); }
+  body {
+    background-color: var(--paper);
+    font-family: var(--font-body);
+    color: var(--ink);
+    position: relative; display: flex; flex-direction: column;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* our own pattern: nested square scales, always very quiet */
+  .pattern { position: absolute; inset: 0; width: 100%; height: 100%; opacity: var(--pattern-opacity, .06); pointer-events: none; }
+
+  header { position: relative; text-align: center; padding: 46px 40px 0; }
+  h1 {
+    position: relative; z-index: 1;
+    font-family: var(--font-display); font-weight: 400; font-size: 70px;
+    line-height: 1.08; letter-spacing: var(--tracking-display);
+  }
+  h1 { color: var(--title-ink, var(--purple)); }
+  /* title highlight: hand-drawn (Rough.js) marker or underline, or a sticker */
+  .hl { position: relative; white-space: nowrap; }
+  .hl-svg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; overflow: visible; }
+  [data-hl="underline"] .hl { color: var(--purple); }
+  [data-hl="sticker"] .hl {
+    display: inline-block; color: var(--hl-ink); background: var(--hl-bg);
+    padding: .02em .22em .08em; margin: .04em 0; border-radius: .2em; transform: rotate(-1.5deg);
+    box-shadow: inset 0 0 0 2px var(--hl-edge), 0 14px 30px -18px var(--hl-glow);
+  }
+  .sub {
+    margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 14px;
+    font-family: var(--font-body); font-size: 24px; letter-spacing: -0.015em; color: var(--ink-soft); font-weight: 500;
+  }
+  .sub b { color: var(--ink); font-weight: 700; }
+  .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--purple); color: #fff; font-weight: 700; font-size: 15px; letter-spacing: .02em;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px var(--line);
+  }
+  .sub .name { color: var(--ink); font-weight: 700; }
+
+  body { --h: var(--hue-1); }
+  .card {
+    position: relative; border-radius: var(--radius-card);
+    background: var(--card-fill, linear-gradient(180deg, color-mix(in srgb, var(--h) 6%, #fff) 0%, #fff 60%));
+    border: 1.5px solid var(--card-line, color-mix(in srgb, var(--h) 32%, #fff));
+    box-shadow: var(--shadow-card);
+    padding: 34px 20px 16px; display: flex; flex-direction: column;
+  }
+  .tag {
+    position: absolute; top: -15px; left: 16px; display: inline-flex; align-items: center; gap: 8px;
+    background: var(--h); color: var(--on-h, #fff); border-radius: 9px; padding: 4px 12px 4px 5px;
+    font-family: var(--font-body); font-weight: 700; font-size: 16px; letter-spacing: -0.005em;
+    box-shadow: 0 0 0 4px var(--paper);
+  }
+  .tag i {
+    font-style: normal; font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+    background: color-mix(in srgb, var(--on-h, #fff) 22%, transparent); border-radius: 6px; padding: 2px 6px;
+  }
+  .card h3 {
+    font-family: var(--font-body); font-weight: 700; font-size: 24px; line-height: 1.12;
+    letter-spacing: -0.03em; margin-bottom: 11px;
+  }
+  .chip {
+    align-self: flex-start; display: inline-flex; gap: 9px; align-items: center;
+    font-family: var(--font-mono); font-weight: 600; font-size: 16px; color: var(--ink);
+    background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius-chip); padding: 5px 12px 5px 10px;
+    margin-bottom: 11px;
+  }
+  .chip::before { content: "\203A"; color: var(--h-text, var(--h)); font-weight: 700; }
+  .body { font-size: 18.5px; line-height: 1.38; color: var(--ink-soft); }
+  .body b { color: var(--ink); font-weight: 600; }
+  .best {
+    margin-top: auto; padding-top: 11px; border-top: 1.5px solid color-mix(in srgb, var(--h) 14%, #fff);
+    font-size: 16.5px; line-height: 1.32; font-weight: 600; color: var(--ink);
+  }
+  .best span {
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; color: var(--h-text, var(--h)); font-weight: 600;
+    margin-right: 8px;
+  }
+  /* motion hooks: the caret only shows while a chip types */
+  .caret { display: inline-block; width: 2px; height: 1.05em; margin-left: -6px; background: var(--h); opacity: 0; vertical-align: -0.15em; }
+  .chip::before { margin-right: 0; }
+
+  /* footer bar: photo, name, role and logo on a purple strip */
+  footer.bar {
+    position: relative; display: flex; align-items: center; gap: 16px; height: 92px; padding: 0 34px;
+    background: var(--purple); color: #fff;
+  }
+  footer.bar .avatar { width: 56px; height: 56px; margin-right: 6px; box-shadow: 0 0 0 3px var(--b-lavender, #E0D6FF); }
+  footer.bar .who { display: flex; flex-direction: column; line-height: 1.15; }
+  footer.bar .who b { font-size: 21px; font-weight: 700; letter-spacing: -0.015em; }
+  footer.bar .who small { font-size: 15px; font-weight: 500; color: rgba(255,255,255,.7); margin-top: 3px; }
+  footer.bar .lockup { height: 40px; margin-left: auto; }
+  [data-byline="footer"] .board { margin-bottom: 30px; }
+
+
+  /* line icon on a soft tile in the card's colour */
+  .ic {
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; flex: none;
+    color: var(--h-text, var(--h)); background: color-mix(in srgb, var(--h) 13%, #fff);
+    box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--h) 20%, transparent);
+  }
+  .card > .ic { position: absolute; top: 16px; right: 16px; }
+  .card:has(> .ic) h3 { padding-right: 50px; }
+  .stage .card:has(> .ic) h3 { padding-right: 0; }
+  .stage .card:has(> .ic) .col-b { padding-right: 52px; }
+
+  /* payoff strip: the result in one line */
+  .payoff {
+    --h: var(--b-mint-text, #2F8F57);
+    position: relative; display: flex; align-items: center; justify-content: center; gap: 16px; padding: 22px 28px;
+    border-radius: var(--radius-card); background: var(--b-mint, #CAF1CD); color: var(--purple);
+    box-shadow: inset 0 0 0 1.5px rgba(47,143,87,.25), 0 14px 30px -20px rgba(47,143,87,.6);
+    font-family: var(--font-display); font-size: 30px; letter-spacing: -0.01em; text-align: center;
+  }
+  .payoff b { font-weight: 400; }
+  .payoff .ic { background: #fff; }
+
+  /* logo tile: real brand logos (Logo.dev) in our premium squircle with a soft sheen */
+  .logo {
+    position: relative; display: inline-grid; place-items: center; flex: none; overflow: hidden;
+    width: var(--s, 56px); height: var(--s, 56px); border-radius: calc(var(--s, 56px) * .28); background: #fff;
+    box-shadow: 0 1px 0 rgba(22,19,31,.04), 0 12px 24px -14px rgba(70,49,135,.5), inset 0 0 0 1px rgba(70,49,135,.09);
+  }
+  .logo img { width: 64%; height: 64%; object-fit: contain; }
+  .logo.full img { width: 100%; height: 100%; object-fit: cover; }
+  .logo::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: linear-gradient(160deg, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 42%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
+  .logo.missing { font: 700 13px var(--font-body); color: var(--ink-soft); text-transform: capitalize; text-align: center; line-height: 1.1; }
+  .ic.logo { background: #fff; box-shadow: 0 1px 0 rgba(22,19,31,.04), 0 10px 20px -12px rgba(70,49,135,.5), inset 0 0 0 1px rgba(70,49,135,.09); }

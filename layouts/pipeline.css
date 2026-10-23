@@ -1,0 +1,12 @@
+/* Layout: pipeline, a left to right chain (skill L6). Lane of steps, arrows between, payoff below. */
+  .board.is-pipeline { position: relative; flex: 1; margin: 44px 26px 30px; display: flex; flex-direction: column; gap: 60px; }
+  .lane { flex: 1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; }
+  .is-pipeline .card { padding: 34px 18px 18px; }
+  .is-pipeline .card > .ic { position: static; width: 100%; height: 190px; border-radius: 18px; margin: 4px 0 22px; }
+  .is-pipeline .card > .ic svg { width: 72px; height: 72px; stroke-width: 1.6; }
+  .is-pipeline .card:has(> .ic) h3 { padding-right: 0; font-size: 30px; margin-bottom: 14px; }
+  .is-pipeline .body { font-size: 23px; line-height: 1.4; }
+  .actor { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; font-weight: 700; font-size: 19px; background: color-mix(in srgb, var(--h) 12%, #fff); color: var(--h-text, var(--h)); }
+  .actor.me { background: var(--purple); color: #fff; }
+  .is-pipeline .payoff { flex: none; padding: 30px; font-size: 34px; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }

@@ -1,0 +1,16 @@
+/* Layout: zigzag, steps alternate sides with an S-line between numbered nodes (static skill 08). */
+  .board.is-zigzag { position: relative; flex: 1; margin: 36px 34px 30px; display: flex; flex-direction: column; gap: 36px; }
+  .zz-row { position: relative; flex: 1; display: flex; align-items: stretch; gap: 30px; }
+  .zz-row.r { flex-direction: row-reverse; }
+  .zz-row .card { flex: 0 0 72%; justify-content: center; padding: 30px 74px 18px 26px; }
+  .is-zigzag .card h3 { font-size: 31px; margin-bottom: 10px; }
+  .is-zigzag .body { font-size: 22px; line-height: 1.4; }
+  .is-zigzag .chip { margin-bottom: 9px; }
+  .zz-step { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; position: relative; z-index: 2; }
+  .zz-step .node {
+    width: 92px; height: 92px; border-radius: 28px; display: grid; place-items: center;
+    font-family: var(--font-display); font-size: 40px; color: var(--h-text, var(--h));
+    background: #fff; box-shadow: inset 0 0 0 2.5px var(--h-line, var(--h-text, var(--h))), 0 16px 30px -18px rgba(12,6,36,.55);
+  }
+  .zz-step small { font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .14em; color: var(--paper-ink-soft); text-transform: uppercase; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }

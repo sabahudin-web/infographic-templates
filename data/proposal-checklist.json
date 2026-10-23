@@ -1,0 +1,52 @@
+{
+  "layout": "checklist",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "8 Things Every",
+    "<g>Draft</g> Carries"
+  ],
+  "subtitle": "<b>Before it reaches my inbox.</b> Missing one? It doesn't get in.",
+  "cards": [
+    {
+      "icon": "workflow",
+      "title": "Which room made it",
+      "body": "Sales, delivery, growth. <b>One room, one job.</b>"
+    },
+    {
+      "icon": "users",
+      "title": "Which client it's for",
+      "body": "Every client has <b>their own space</b> and rules."
+    },
+    {
+      "icon": "send",
+      "title": "What it wants to do",
+      "body": "Send, publish, invoice or deploy. <b>Named up front.</b>"
+    },
+    {
+      "icon": "user-check",
+      "title": "Who it's about",
+      "body": "<b>One id per person</b> across every table. No duplicates."
+    },
+    {
+      "icon": "file-text",
+      "title": "The draft itself",
+      "body": "The email, post or report, <b>ready to approve as is.</b>"
+    },
+    {
+      "icon": "lightbulb",
+      "title": "Why it should go out",
+      "body": "A plain reason, and <b>which guideline it bent</b>, if any."
+    },
+    {
+      "icon": "key",
+      "title": "Money at stake",
+      "body": "So I know <b>what a yes really costs</b> before I click."
+    },
+    {
+      "icon": "badge-check",
+      "title": "The critic's score",
+      "body": "Graded against <b>my best past work</b>, three fixes max."
+    }
+  ]
+}

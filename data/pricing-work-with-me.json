@@ -1,0 +1,118 @@
+{
+  "layout": "pricing",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "What It Costs to",
+    "Work <g>With Me</g>"
+  ],
+  "subtitle": "<b>Three ways in.</b> Start with the one that matches how sure you are.",
+  "cards": [
+    {
+      "tag": "See",
+      "icon": "search",
+      "title": "AI Audit",
+      "price": "€750",
+      "per": "once",
+      "for": "You know AI could help, not where to start.",
+      "features": [
+        "A real week of work, mapped",
+        "Where AI fits, and where it doesn't",
+        "The one workflow to fix first"
+      ],
+      "cta": "Find what to fix",
+      "best": "Seeing the options.",
+      "facts": [
+        [
+          "How long",
+          "One audit"
+        ],
+        [
+          "Your risk",
+          "Lowest"
+        ],
+        [
+          "After it",
+          "Pilot or Partner"
+        ]
+      ]
+    },
+    {
+      "tag": "Prove",
+      "icon": "rocket",
+      "title": "AI Ops Pilot",
+      "price": "€2,000",
+      "per": "1 month",
+      "featured": "Start here if unsure",
+      "for": "You want proof before a bigger commitment.",
+      "features": [
+        "One workflow, built with you",
+        "Runs in the tools you already have",
+        "Shown working, tested together"
+      ],
+      "cta": "Prove one thing",
+      "best": "Testing it for real.",
+      "facts": [
+        [
+          "How long",
+          "One month"
+        ],
+        [
+          "Your risk",
+          "Small, proof early"
+        ],
+        [
+          "After it",
+          "Partner, if it works"
+        ]
+      ]
+    },
+    {
+      "tag": "Grow",
+      "icon": "refresh-cw",
+      "title": "AI Ops Partner",
+      "price": "€2,000",
+      "per": "/ month",
+      "for": "You want an AI Ops team running next to yours.",
+      "features": [
+        "Builds happen inside it",
+        "3 months to start (€6,000)",
+        "Starts after the pilot, if you continue"
+      ],
+      "cta": "Build the system",
+      "best": "Scaling what works.",
+      "facts": [
+        [
+          "How long",
+          "3 months to start"
+        ],
+        [
+          "Your risk",
+          "Bigger, after proof"
+        ],
+        [
+          "After it",
+          "More workflows"
+        ]
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "icon": "message-circle",
+      "name": "Coaching call",
+      "price": "€400 / hour"
+    },
+    {
+      "icon": "file-text",
+      "name": "Academy",
+      "price": "€17 / month"
+    },
+    {
+      "icon": "users",
+      "name": "Community",
+      "price": "Free"
+    }
+  ],
+  "note": "Full payment upfront. The pilot doesn't count toward Partner; if you continue, its 3 months start after."
+}

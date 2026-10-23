@@ -1,0 +1,17 @@
+/* Layout: stand-out grid (static skill 23-standout-grid). Many the same, one different. */
+  .board.is-standout { position: relative; flex: 1; margin: 40px 28px 28px; display: flex; flex-direction: column; gap: 26px; }
+  .is-standout .field { position: relative; flex: 2; border-radius: 30px; padding: 34px 34px 26px; display: flex; flex-direction: column;
+    background: linear-gradient(180deg, #fff, color-mix(in srgb, var(--b-lavender) 40%, #fff)); box-shadow: var(--shadow-card), inset 0 0 0 1.5px var(--line); }
+  .people { flex: 1; display: grid; grid-template-columns: repeat(var(--cols), 1fr); align-items: center; justify-items: center; row-gap: 6px; }
+  .person { color: #B9AED8; line-height: 0; }
+  .person.on { color: #fff; background: var(--b-orange); border-radius: 14px; padding: 8px; box-shadow: 0 0 0 6px rgba(255,103,25,.18), 0 14px 26px -10px rgba(255,103,25,.8); }
+  .callout { position: absolute; left: calc(34px + (100% - 68px) * (var(--c) + .5) / var(--cols) + 34px); top: calc(34px + (100% - 120px) * (var(--r) + .5) / var(--rows) - 42px);
+    background: var(--purple); color: #fff; border-radius: 16px; padding: 12px 16px; display: flex; flex-direction: column; gap: 3px; box-shadow: 0 16px 30px -16px rgba(42,29,90,.8); }
+  .callout b { font-size: 23px; }
+  .callout span { font-size: 18px; color: rgba(255,255,255,.78); }
+  .callout::before { content: ""; position: absolute; left: -9px; top: 26px; border: 9px solid transparent; border-left: 0; border-right-color: var(--purple); }
+  .is-standout .caption { text-align: center; font-size: 22px; font-weight: 600; color: var(--ink-soft); margin-top: 14px; }
+  .is-standout .why { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .is-standout .card { padding: 36px 20px 18px; }
+  .is-standout .card h3 { font-size: 29px; margin-bottom: 12px; }
+  .is-standout .body { font-size: 22px; line-height: 1.4; }

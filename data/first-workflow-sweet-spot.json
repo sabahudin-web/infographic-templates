@@ -1,0 +1,30 @@
+{
+  "layout": "venn",
+  "title": [
+    "The <g>Sweet Spot</g> for",
+    "Your First Workflow"
+  ],
+  "subtitle": "<b>Not the biggest job.</b> The one where three things meet.",
+  "core": "Automate<br>this first",
+  "cards": [
+    {
+      "tag": "Repeats",
+      "icon": "repeat",
+      "title": "It happens every week",
+      "body": "One-offs stay manual. <b>Repetition is where time leaks.</b>"
+    },
+    {
+      "tag": "Clear rules",
+      "icon": "list-checks",
+      "title": "Done the same way",
+      "body": "If two people do it two ways, <b>we fix it first.</b>"
+    },
+    {
+      "tag": "Low risk",
+      "icon": "shield",
+      "title": "Safe if it goes wrong",
+      "body": "No money or client name on it. <b>Proof comes early.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

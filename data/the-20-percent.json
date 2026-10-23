@@ -1,0 +1,42 @@
+{
+  "layout": "split-stat",
+  "example": true,
+  "title": [
+    "It's Not the AI.",
+    "It's <g>the 20%</g>."
+  ],
+  "subtitle": "<b>Most hours go to a few repeat jobs.</b> Fix those first.",
+  "cards": [
+    {
+      "tag": "Repeat work",
+      "icon": "repeat",
+      "number": "80%",
+      "share": 80,
+      "title": "of the hours go to the same few jobs",
+      "body": "Follow-ups, reports, inbox, admin. <b>The same steps every week.</b>",
+      "weight": 2.1,
+      "chips": [
+        "Follow-ups",
+        "Weekly reports",
+        "Inbox",
+        "Invoices",
+        "Meeting notes"
+      ]
+    },
+    {
+      "tag": "Real work",
+      "icon": "sparkles",
+      "number": "20%",
+      "share": 20,
+      "title": "is the work you're paid for",
+      "body": "Clients, ideas, decisions. <b>Win this back first.</b>",
+      "weight": 1,
+      "chips": [
+        "Clients",
+        "Ideas",
+        "Decisions"
+      ]
+    }
+  ],
+  "highlight": "sticker"
+}

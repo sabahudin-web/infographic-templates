@@ -1,0 +1,38 @@
+{
+  "layout": "big-number",
+  "highlight": "sticker",
+  "title": [
+    "The Smallest Way",
+    "to <g>Start</g>"
+  ],
+  "subtitle": "<b>Not sure yet?</b> Prove one thing before you commit to more.",
+  "hero": {
+    "eyebrow": "The AI Ops pilot",
+    "number": "€2,000",
+    "what": "One month. A first step for when you're not sure yet."
+  },
+  "cards": [
+    {
+      "tag": "Length",
+      "icon": "calendar",
+      "title": "One month",
+      "body": "A first step, <b>not a long contract.</b>",
+      "best": "Proof comes early, risk stays small."
+    },
+    {
+      "tag": "Price",
+      "icon": "badge-check",
+      "title": "Same as one Partner month",
+      "body": "€2,000, <b>paid upfront.</b>",
+      "best": "Trying it costs no more than a month."
+    },
+    {
+      "tag": "After",
+      "icon": "refresh-cw",
+      "title": "Then you decide",
+      "body": "Continue into AI Ops Partner: <b>3 months, €6,000</b>, starting after the pilot.",
+      "best": "No bigger commitment until you've seen it work."
+    }
+  ],
+  "bestLabel": "WHY"
+}

@@ -1,0 +1,79 @@
+{
+  "title": [
+    "How My <g>AI Ops Team</g>",
+    "Actually Works"
+  ],
+  "subtitle": "<b>Nothing ships without my yes.</b> 8 steps, one loop.",
+  "hub": {
+    "title": "AI Ops Loop",
+    "sub": "Runs every client job"
+  },
+  "cards": [
+    {
+      "tag": "Observe",
+      "title": "It watches for triggers",
+      "chip": "new_lead_added",
+      "body": "A new lead, a client message or a <b>Monday 7am timer</b> starts a run. No trigger, no work.",
+      "best": "Work that starts the same way every time.",
+      "icon": "eye"
+    },
+    {
+      "tag": "Propose",
+      "title": "A worker drafts the job",
+      "chip": "/run sales",
+      "body": "One room drafts the email, post or audit <b>from my own examples</b>, not from scratch.",
+      "best": "Drafts you write ten times a week.",
+      "icon": "pencil-line"
+    },
+    {
+      "tag": "Critic",
+      "title": "A second AI grades it",
+      "chip": "/critic-score",
+      "body": "Every draft is scored against my best past work. <b>Three fix rounds max</b>, then it comes to me.",
+      "best": "Quality without reading it all twice.",
+      "icon": "circle-check"
+    },
+    {
+      "tag": "Approve",
+      "title": "Nothing leaves without my yes",
+      "chip": "/inbox",
+      "body": "Emails, posts and invoices wait in one inbox. <b>I approve, edit or reject</b> in one click.",
+      "best": "Owners who won't let AI email clients alone.",
+      "icon": "inbox"
+    },
+    {
+      "tag": "Execute",
+      "title": "Only approved work goes out",
+      "chip": "/execute",
+      "body": "A hard lock checks for an approved id. <b>There is no way around it.</b>",
+      "best": "Anything with money or a client's name on it.",
+      "icon": "send"
+    },
+    {
+      "tag": "Measure",
+      "title": "It checks what happened",
+      "chip": "/measure",
+      "body": "Replies after <b>5 days</b>, post reach after <b>48 hours</b>, invoice paid or not.",
+      "best": "Knowing what actually worked.",
+      "icon": "chart-no-axes-column"
+    },
+    {
+      "tag": "Learn",
+      "title": "Every no becomes a lesson",
+      "chip": "/learn",
+      "body": "A rejection or an edit is saved as a <b>good vs bad example</b>, so the next draft is closer.",
+      "best": "Teaching AI your taste without rules.",
+      "icon": "lightbulb"
+    },
+    {
+      "tag": "Ledger",
+      "title": "One memory for everything",
+      "chip": "ledger.events",
+      "body": "Every room reads and writes <b>one shared database</b>. One id per client, everywhere.",
+      "best": "Clients spread over ten tools.",
+      "icon": "database"
+    }
+  ],
+  "highlight": "sticker",
+  "layout": "hub"
+}

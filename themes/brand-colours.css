@@ -1,0 +1,11 @@
+/* The brand palette. Every theme picks only from these (plus derived text-safe shades). */
+:root {
+  --b-purple: #463187; --b-orange: #FF6719; --b-lavender: #E0D6FF; --b-peach: #FFE8DC; --b-mint: #CAF1CD; --b-white: #FFFFFF;
+  --b-ink: #1E1640;            /* near-black with purple in it, for body text */
+  --b-orange-text: #E2560F;    /* orange dark enough for small text */
+  --b-mint-text: #2F8F57;      /* mint dark enough for small text */
+  --headline-gradient: linear-gradient(92deg, var(--b-orange) 0%, #C2459A 50%, var(--b-purple) 100%);
+  --ink: var(--b-ink);
+  --purple: var(--b-purple);
+  --purple-deep: #2A1D5A;
+}

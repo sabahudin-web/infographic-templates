@@ -1,0 +1,45 @@
+{
+  "layout": "loop",
+  "title": [
+    "The Unstuck Method,",
+    "<g>On Repeat</g>"
+  ],
+  "subtitle": "<b>One workflow at a time.</b> Then the loop starts again.",
+  "centre": {
+    "title": "One workflow",
+    "sub": "then pick the next one"
+  },
+  "cards": [
+    {
+      "tag": "Find",
+      "icon": "search",
+      "title": "Watch the work",
+      "body": "Map a real week. <b>No tools yet.</b>"
+    },
+    {
+      "tag": "Fix",
+      "icon": "wrench",
+      "title": "Make it simpler",
+      "body": "Cut the steps. <b>Never automate a mess.</b>"
+    },
+    {
+      "tag": "Automate",
+      "icon": "zap",
+      "title": "AI takes the boring part",
+      "body": "Built on the tools <b>you already have.</b>"
+    },
+    {
+      "tag": "Measure",
+      "icon": "chart-no-axes-column",
+      "title": "Real numbers only",
+      "body": "No number yet? <b>\"To be measured\".</b>"
+    },
+    {
+      "tag": "Learn",
+      "icon": "lightbulb",
+      "title": "Every edit teaches it",
+      "body": "Your changes make <b>the next draft closer.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

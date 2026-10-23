@@ -1,0 +1,49 @@
+{
+  "layout": "dialogue",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "What Owners Ask Me",
+    "<g>About AI</g>"
+  ],
+  "subtitle": "<b>Four questions I hear every week.</b> And what I say back.",
+  "them": {
+    "name": "A business owner",
+    "role": "Too many tabs open",
+    "icon": "user-check"
+  },
+  "cards": [
+    {
+      "who": "them",
+      "text": "Can AI just run the whole business for me?"
+    },
+    {
+      "who": "me",
+      "text": "Not on day one. We find the <b>one task that repeats</b> every week, and start there."
+    },
+    {
+      "who": "them",
+      "text": "Why not automate everything at once?"
+    },
+    {
+      "who": "me",
+      "text": "Because you'd automate a mess. <b>We fix the process first</b>, then AI takes it."
+    },
+    {
+      "who": "them",
+      "text": "What if it sends something wrong to a client?"
+    },
+    {
+      "who": "me",
+      "text": "It can't. <b>Nothing leaves without your yes.</b>"
+    },
+    {
+      "who": "them",
+      "text": "And what happens when you're gone?"
+    },
+    {
+      "who": "me",
+      "text": "It runs in your business, in your words. <b>You own it.</b>"
+    }
+  ]
+}

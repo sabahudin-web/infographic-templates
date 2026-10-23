@@ -1,0 +1,18 @@
+/* Layout: timeline schedule (static 04, T16). Times down a rail on the page, a block for each slot. */
+  .board.is-schedule { position: relative; flex: 1; margin: 34px 34px 30px 26px; display: flex; flex-direction: column; gap: 14px; }
+  .is-schedule .slot { flex: 1; display: grid; grid-template-columns: 196px 1fr; align-items: stretch; column-gap: 34px; }
+  .is-schedule .when { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; padding-right: 4px; }
+  .is-schedule .when b { font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.05; color: var(--paper-ink); letter-spacing: -0.01em; }
+  .is-schedule .when small { font-family: var(--font-mono); font-size: 14.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--paper-ink-soft); margin-top: 5px; }
+  .is-schedule .card { display: grid; grid-template-columns: 56px 1fr auto; align-items: center; column-gap: 18px; padding: 12px 22px 12px 14px; }
+  .is-schedule .card .ic { width: 56px; height: 56px; border-radius: 16px; }
+  .is-schedule h3 { font-size: 26px; letter-spacing: -0.03em; margin: 0 0 4px; }
+  .is-schedule .body { font-size: 19.5px; line-height: 1.35; }
+  .is-schedule .card .chip { margin: 0; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+  .is-schedule .card > .ic, .is-schedule .card > .logo { position: static; }
+  .is-schedule .card:has(> .ic) h3 { padding-right: 0; }
+  .is-schedule .card > div:not(.chip) { min-width: 0; }
+  .is-schedule .card .chip { align-self: center; }
+  .is-schedule h3 { font-size: 28px; }
+  .is-schedule .body { font-size: 21px; }

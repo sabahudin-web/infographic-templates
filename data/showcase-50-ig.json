@@ -1,0 +1,344 @@
+{
+  "layout": "showcase",
+  "motion": "scripts/motion-showcase-tour.js",
+  "seconds": 45,
+  "highlight": "sticker",
+  "title": [
+    "<g>50</g> Infographic",
+    "Layout Templates"
+  ],
+  "subtitle": "<b>One brand, every shape.</b> Each one animates, light or dark.",
+  "info": {
+    "big": "50",
+    "label": "layouts in one system",
+    "lines": [
+      "Light and dark purple",
+      "One template, one data file",
+      "Every one loops in 12 seconds"
+    ]
+  },
+  "cards": [],
+  "items": [
+    {
+      "name": "ai-ops-loop",
+      "layout": "hub",
+      "title": "How My AI Ops Team Actually Works",
+      "theme": "b-warm"
+    },
+    {
+      "name": "one-engine",
+      "layout": "radial-hub",
+      "title": "16 Tools, One Engine",
+      "theme": "b-warm"
+    },
+    {
+      "name": "never-miss-a-lead",
+      "layout": "radar",
+      "title": "Never Miss a Warm Lead",
+      "theme": "b-warm"
+    },
+    {
+      "name": "one-call-five-jobs",
+      "layout": "fan-out",
+      "title": "One Call, Five Jobs Done",
+      "theme": "b-warm"
+    },
+    {
+      "name": "seven-tools-one-system",
+      "layout": "untangle",
+      "title": "From 7 Tools to One System",
+      "theme": "b-warm"
+    },
+    {
+      "name": "lead-to-call",
+      "layout": "pipeline",
+      "title": "From New Lead to Booked Call",
+      "theme": "b-warm"
+    },
+    {
+      "name": "how-a-post-ships",
+      "layout": "vertical-steps",
+      "title": "How a Post Ships",
+      "theme": "b-warm"
+    },
+    {
+      "name": "stuck-to-running",
+      "layout": "stairs",
+      "title": "From Stuck to Running",
+      "theme": "b-warm"
+    },
+    {
+      "name": "dm-to-system",
+      "layout": "serpentine",
+      "title": "From First Chat to a Running System",
+      "theme": "b-warm"
+    },
+    {
+      "name": "unstuck-method-loop",
+      "layout": "loop",
+      "title": "The Unstuck Method, On Repeat",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-ops-week",
+      "layout": "spine",
+      "title": "A Week With an AI Ops Team",
+      "theme": "b-warm"
+    },
+    {
+      "name": "work-with-me",
+      "layout": "column-flow",
+      "title": "Three Ways to Work With Me",
+      "theme": "b-warm"
+    },
+    {
+      "name": "where-ai-fits",
+      "layout": "tree",
+      "title": "Where AI Fits in a Small Business",
+      "theme": "b-warm"
+    },
+    {
+      "name": "what-to-automate",
+      "layout": "funnel",
+      "title": "What I Automate First",
+      "theme": "b-warm"
+    },
+    {
+      "name": "first-workflow-sweet-spot",
+      "layout": "venn",
+      "title": "The Sweet Spot for Your First Workflow",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-ops-layers",
+      "layout": "layers",
+      "title": "The 4 Layers of an AI Ops System",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-levels",
+      "layout": "ladder",
+      "title": "The 5 Levels of AI in Business",
+      "theme": "b-warm"
+    },
+    {
+      "name": "nine-beliefs",
+      "layout": "grid",
+      "title": "9 Beliefs Behind My AI Work",
+      "theme": "b-warm"
+    },
+    {
+      "name": "two-ways",
+      "layout": "compare",
+      "title": "Same Week. Two Ways.",
+      "theme": "b-warm"
+    },
+    {
+      "name": "three-ways-to-start",
+      "layout": "matrix",
+      "title": "Three Ways to Start With Me",
+      "theme": "b-warm"
+    },
+    {
+      "name": "what-you-stop-doing",
+      "layout": "vanish-list",
+      "title": "What You Stop Doing",
+      "theme": "b-warm"
+    },
+    {
+      "name": "stop-collecting-tools",
+      "layout": "billboard",
+      "title": "Stop Collecting AI Tools",
+      "theme": "b-warm"
+    },
+    {
+      "name": "big-number-pilot",
+      "layout": "big-number",
+      "title": "The Smallest Way to Start",
+      "theme": "b-warm"
+    },
+    {
+      "name": "bars-what-it-costs",
+      "layout": "bars",
+      "title": "What It Costs to Work With Me",
+      "theme": "b-warm"
+    },
+    {
+      "name": "donut-owner-week",
+      "layout": "donut",
+      "title": "Where an Owner's Week Goes",
+      "theme": "b-warm"
+    },
+    {
+      "name": "growth-one-workflow",
+      "layout": "growth-curve",
+      "title": "One Workflow, Hours Back",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-stack-receipt",
+      "layout": "receipt",
+      "title": "The AI Stack You Rent",
+      "theme": "b-warm"
+    },
+    {
+      "name": "proposal-checklist",
+      "layout": "checklist",
+      "title": "8 Things Every Draft Carries",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "never-do",
+      "layout": "number-list",
+      "title": "8 Things My AI Team Can Never Do",
+      "theme": "b-warm"
+    },
+    {
+      "name": "words-never-written",
+      "layout": "dense-list",
+      "title": "12 Words My AI Team Will Never Write",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-team-day",
+      "layout": "schedule",
+      "title": "When My AI Team Clocks In",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "inside-the-system",
+      "layout": "folder-tree",
+      "title": "What's Inside My AI Ops System",
+      "theme": "b-warm"
+    },
+    {
+      "name": "what-owners-ask",
+      "layout": "dialogue",
+      "title": "What Owners Ask Me About AI",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "case-study-follow-ups",
+      "layout": "case-study",
+      "title": "One Workflow, Hours Back",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "the-20-percent",
+      "layout": "split-stat",
+      "title": "It's Not the AI. It's the 20%.",
+      "theme": "b-warm"
+    },
+    {
+      "name": "monday-routine",
+      "layout": "routine-board",
+      "title": "My Monday Morning, Run by AI",
+      "theme": "b-warm"
+    },
+    {
+      "name": "pricing-work-with-me",
+      "layout": "pricing",
+      "title": "What It Costs to Work With Me",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "stand-out-with-ai",
+      "layout": "standout",
+      "title": "Everyone Has AI. Few Have a System.",
+      "theme": "b-warm"
+    },
+    {
+      "name": "the-ai-rollercoaster",
+      "layout": "wave",
+      "title": "How Most Owners Do AI",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "first-workflow-steps",
+      "layout": "zigzag",
+      "title": "5 Steps to Your First AI Workflow",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "should-you-automate",
+      "layout": "decision-tree",
+      "title": "Should You Automate This Task?",
+      "theme": "b-warm"
+    },
+    {
+      "name": "ai-on-top",
+      "layout": "pyramid",
+      "title": "AI Goes on Top, Not First",
+      "theme": "b-warm"
+    },
+    {
+      "name": "client-sees-the-tip",
+      "layout": "iceberg",
+      "title": "What a Client Sees Is the Tip",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "where-ai-earns-its-place",
+      "layout": "venn2",
+      "title": "Where AI Earns Its Place",
+      "theme": "b-warm"
+    },
+    {
+      "name": "grow-from-proof",
+      "layout": "rings",
+      "title": "Start Small, Grow From Proof",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "how-clients-find-me",
+      "layout": "funnel-notes",
+      "title": "How Clients Find Me Without Chasing",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "content-pillars",
+      "layout": "content-matrix",
+      "title": "Never Stuck for a Post Idea Again",
+      "theme": "b-warm"
+    },
+    {
+      "name": "page-that-books-calls",
+      "layout": "page-anatomy",
+      "title": "Anatomy of a Page That Books Calls",
+      "theme": "b-warm"
+    },
+    {
+      "name": "better-first-lines",
+      "layout": "post-compare",
+      "title": "Same Idea. A Better Post.",
+      "theme": "purple-dark"
+    },
+    {
+      "name": "unstuck-flywheel",
+      "layout": "wheel",
+      "title": "The Flywheel Behind Unstuck",
+      "theme": "purple-dark"
+    }
+  ],
+  "tour": {
+    "items": [
+      "ai-ops-loop",
+      "never-miss-a-lead",
+      "lead-to-call",
+      "stuck-to-running",
+      "donut-owner-week",
+      "ai-on-top"
+    ],
+    "start": 2.4,
+    "grow": 0.4,
+    "play": 6,
+    "shrink": 0.3,
+    "gap": 0.15,
+    "speed": 2
+  },
+  "cta": {
+    "before": "Comment",
+    "word": "LAYOUTS",
+    "after": "and I'll send you all 50"
+  }
+}

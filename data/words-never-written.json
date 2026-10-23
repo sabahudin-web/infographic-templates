@@ -1,0 +1,75 @@
+{
+  "layout": "dense-list",
+  "highlight": "sticker",
+  "title": [
+    "12 Words My AI Team",
+    "Will <g>Never</g> Write"
+  ],
+  "subtitle": "<b>They're banned in the rules.</b> Every draft is checked for them.",
+  "cards": [
+    {
+      "title": "Leverage",
+      "body": "Say what you'll use, and for what.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "Unlock",
+      "body": "Nothing was locked. Name the result.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "Seamless",
+      "body": "Every handover has a seam. Show it.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "Game-changing",
+      "body": "Let the reader decide that.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "Solution",
+      "body": "Say what it does instead.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "10x",
+      "body": "Real numbers only, or none.",
+      "pill": "Hype"
+    },
+    {
+      "title": "Basically",
+      "body": "If it's basic, skip the word.",
+      "pill": "Filler"
+    },
+    {
+      "title": "To be honest",
+      "body": "Everything else should be honest too.",
+      "pill": "Filler"
+    },
+    {
+      "title": "Quick question",
+      "body": "Just ask the question.",
+      "pill": "Opener"
+    },
+    {
+      "title": "Just checking in",
+      "body": "Bring something useful instead.",
+      "pill": "Opener"
+    },
+    {
+      "title": "Circle back",
+      "body": "Say when you'll reply.",
+      "pill": "Corporate"
+    },
+    {
+      "title": "Long dashes",
+      "body": "A comma or a full stop does the job.",
+      "pill": "Punctuation"
+    }
+  ],
+  "payoff": {
+    "icon": "badge-check",
+    "text": "Plain words, in my voice"
+  }
+}

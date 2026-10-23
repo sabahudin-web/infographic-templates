@@ -1,0 +1,36 @@
+{
+  "layout": "donut",
+  "highlight": "sticker",
+  "example": true,
+  "title": [
+    "Where an Owner's",
+    "<g>Week Goes</g>"
+  ],
+  "subtitle": "<b>Most of it isn't the work you're paid for.</b> Map yours first.",
+  "centre": {
+    "big": "50h",
+    "small": "a typical owner's week"
+  },
+  "cards": [
+    {
+      "title": "Client work",
+      "body": "The part you're paid for.",
+      "value": 40
+    },
+    {
+      "title": "Admin",
+      "body": "Invoices, notes, files.",
+      "value": 25
+    },
+    {
+      "title": "Inbox",
+      "body": "Replies and chasing.",
+      "value": 20
+    },
+    {
+      "title": "Sales",
+      "body": "Leads and follow-ups.",
+      "value": 15
+    }
+  ]
+}

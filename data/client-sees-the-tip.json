@@ -1,0 +1,56 @@
+{
+  "layout": "iceberg",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "What a Client Sees",
+    "Is <g>the Tip</g>"
+  ],
+  "subtitle": "<b>One good reply.</b> Six things made it good.",
+  "above": "What the client sees",
+  "below": "What runs underneath",
+  "cards": [
+    {
+      "tag": "The tip",
+      "icon": "mail",
+      "title": "A reply in your voice",
+      "body": "On time, on point, <b>sent with your yes.</b>"
+    },
+    {
+      "tag": "Examples",
+      "icon": "file-text",
+      "title": "Your best past work",
+      "body": "Drafts start from <b>what already worked.</b>"
+    },
+    {
+      "tag": "Critic",
+      "icon": "circle-check",
+      "title": "A second AI checks it",
+      "body": "Scored before you see it, <b>three fixes max.</b>"
+    },
+    {
+      "tag": "Inbox",
+      "icon": "inbox",
+      "title": "One place to approve",
+      "body": "Approve, edit or reject <b>in one click.</b>"
+    },
+    {
+      "tag": "Lock",
+      "icon": "shield",
+      "title": "Nothing goes out alone",
+      "body": "A hard lock checks for <b>an approved id.</b>"
+    },
+    {
+      "tag": "Ledger",
+      "icon": "database",
+      "title": "One shared memory",
+      "body": "<b>One id per client</b>, in every room."
+    },
+    {
+      "tag": "Learn",
+      "icon": "lightbulb",
+      "title": "Every edit teaches it",
+      "body": "Your changes make <b>the next draft closer.</b>"
+    }
+  ]
+}

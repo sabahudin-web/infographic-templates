@@ -1,0 +1,18 @@
+/* Layout: personas dialogue (static 16, T08). Two people trade lines; bubbles alternate sides. */
+  .board.is-dialogue { position: relative; flex: 1; margin: 30px 34px 30px; display: flex; flex-direction: column; gap: 12px; }
+  .is-dialogue .who-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .is-dialogue .persona { display: inline-flex; align-items: center; gap: 12px; color: var(--paper-ink); font-weight: 700; font-size: 21px; }
+  .is-dialogue .persona small { display: block; font-weight: 500; font-size: 16px; color: var(--paper-ink-soft); }
+  .is-dialogue .face { width: 54px; height: 54px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; flex: none; box-shadow: 0 0 0 3px rgba(255,255,255,.6); }
+  .is-dialogue .face img { width: 100%; height: 100%; object-fit: cover; }
+  .is-dialogue .face.them { background: var(--b-lavender, #E0D6FF); color: var(--purple); }
+  .is-dialogue .line { flex: 1; display: flex; align-items: center; gap: 14px; }
+  .is-dialogue .line.me { flex-direction: row-reverse; }
+  .is-dialogue .line .face { width: 46px; height: 46px; }
+  .is-dialogue .card { max-width: 76%; padding: 16px 24px; border-radius: 24px; }
+  .is-dialogue .line.them .card { border-bottom-left-radius: 6px; }
+  .is-dialogue .line.me .card { border-bottom-right-radius: 6px; }
+  .is-dialogue .card p { font-size: 23px; line-height: 1.32; letter-spacing: -0.015em; color: var(--ink); }
+  .is-dialogue .line.them .card p { font-weight: 500; }
+  .is-dialogue .line.me .card p { font-weight: 600; }
+  .is-dialogue .card p b { color: var(--h-text, var(--h)); }

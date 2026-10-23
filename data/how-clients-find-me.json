@@ -1,0 +1,57 @@
+{
+  "layout": "funnel-notes",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "How Clients <g>Find</g> Me",
+    "Without Chasing"
+  ],
+  "subtitle": "<b>No cold pitch.</b> Each step earns the next one.",
+  "side": "Owners stuck in their tools",
+  "cards": [
+    {
+      "tag": "Get seen",
+      "logo": "linkedin",
+      "stage": "Posts that show the work",
+      "sub": "On LinkedIn, every week",
+      "note": "Real numbers and real failures land. <b>Honesty about the struggle</b> is what people answer."
+    },
+    {
+      "tag": "Earn trust",
+      "icon": "sparkles",
+      "stage": "Give something useful",
+      "sub": "A template, a playbook, honest feedback",
+      "note": "Help before any ask builds <b>the trust that leads to calls.</b>"
+    },
+    {
+      "tag": "Start talking",
+      "logo": "calendly",
+      "stage": "One message, one call",
+      "sub": "A reply the same week",
+      "note": "Two concrete times or a booking link keeps it alive. <b>A six-week gap lost one.</b>"
+    }
+  ],
+  "payoff": {
+    "icon": "calendar",
+    "text": "A call with someone who already trusts me"
+  },
+  "channelsLabel": "Runs on",
+  "channels": [
+    {
+      "logo": "linkedin",
+      "name": "LinkedIn"
+    },
+    {
+      "icon": "mail",
+      "name": "Newsletter"
+    },
+    {
+      "icon": "message-circle",
+      "name": "DMs"
+    },
+    {
+      "logo": "calendly",
+      "name": "Calendly"
+    }
+  ]
+}

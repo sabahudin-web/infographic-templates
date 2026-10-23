@@ -1,0 +1,30 @@
+/* Layout: pricing tiers (static skill 26-pricing-tiers). Three offer columns, the middle one featured. */
+  .board.is-pricing { position: relative; flex: 1; margin: 46px 28px 28px; display: flex; flex-direction: column; gap: 20px; }
+  .tiers { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; }
+  .is-pricing .tier { padding: 38px 22px 22px; display: flex; flex-direction: column; }
+  .is-pricing .tier.featured { box-shadow: 0 0 0 3px var(--b-orange), 0 30px 50px -22px rgba(255,103,25,.55); }
+  .is-pricing .flag { position: absolute; top: -17px; right: 16px; z-index: 2; background: var(--b-mint); color: var(--purple); font-weight: 700; font-size: 16px; border-radius: 999px; padding: 6px 14px; box-shadow: 0 6px 14px -8px rgba(47,143,87,.7); }
+  .is-pricing .tier > .ic { position: absolute; top: 18px; right: 18px; }
+  .is-pricing .tier.featured > .ic { top: 26px; }
+  .is-pricing h3 { font-size: 28px; padding-right: 48px; margin-bottom: 14px; }
+  .is-pricing .price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .is-pricing .price b { font-family: var(--font-display); font-weight: 400; font-size: 62px; line-height: 1; color: var(--purple); letter-spacing: -0.02em; }
+  .is-pricing .price span { font-size: 18px; font-weight: 600; color: var(--ink-soft); }
+  .is-pricing .for { margin: 16px 0 20px; padding-bottom: 20px; border-bottom: 1.5px solid color-mix(in srgb, var(--h) 16%, #fff); font-size: 21px; line-height: 1.38; color: var(--ink-soft); }
+  .is-pricing ul { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+  .is-pricing li { display: flex; gap: 12px; align-items: flex-start; font-size: 21px; line-height: 1.32; font-weight: 600; color: var(--ink); }
+  .is-pricing li svg { flex: none; color: var(--b-mint-text); margin-top: 1px; }
+  .is-pricing .best { margin-top: auto; padding-top: 16px; margin-bottom: 14px; }
+  .is-pricing .cta { text-align: center; border-radius: 14px; padding: 14px; font-weight: 700; font-size: 19px; background: color-mix(in srgb, var(--h) 12%, #fff); color: var(--h-text, var(--h)); }
+  .is-pricing .featured .cta { background: var(--h); color: var(--on-h, #fff); }
+  .extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .extra { display: flex; align-items: center; gap: 12px; background: #fff; border-radius: 18px; padding: 14px 16px; box-shadow: var(--shadow-card), inset 0 0 0 1.5px var(--line); }
+  .extra .ic { --h: var(--b-purple); width: 40px; height: 40px; }
+  .extra b { font-size: 19px; color: var(--ink); white-space: nowrap; }
+  .extra .amt { margin-left: auto; white-space: nowrap; font-family: var(--font-display); font-size: 20px; color: var(--b-orange-text); }
+  .is-pricing .note { text-align: center; font-size: 17px; font-weight: 500; color: var(--paper-ink-soft); }
+  .is-pricing .tiers { padding-top: 8px; }
+  .is-pricing .facts { margin-top: 26px; display: flex; flex-direction: column; gap: 10px; }
+  .is-pricing .facts div { display: flex; justify-content: space-between; gap: 10px; background: color-mix(in srgb, var(--h) 8%, #fff); border-radius: 12px; padding: 11px 14px; }
+  .is-pricing .facts dt { font-family: var(--font-mono); font-size: 13.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--h-text, var(--h)); align-self: center; }
+  .is-pricing .facts dd { font-size: 18px; font-weight: 700; color: var(--ink); text-align: right; }

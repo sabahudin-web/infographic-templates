@@ -1,0 +1,47 @@
+{
+  "layout": "zigzag",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "5 Steps to Your",
+    "<g>First AI Workflow</g>"
+  ],
+  "subtitle": "<b>Not the biggest job.</b> The one you can prove in a month.",
+  "cards": [
+    {
+      "tag": "Find",
+      "icon": "search",
+      "step": "Week 1",
+      "title": "Watch a real week of work",
+      "body": "Every task gets written down. <b>No tools, no AI yet.</b>"
+    },
+    {
+      "tag": "Fix",
+      "icon": "wrench",
+      "step": "Week 1",
+      "title": "Cut the steps nobody needs",
+      "body": "Make it simpler on paper first. <b>Never automate a mess.</b>"
+    },
+    {
+      "tag": "Pick",
+      "icon": "target",
+      "step": "Week 2",
+      "title": "Choose one workflow",
+      "body": "It repeats, it has clear rules, and it is <b>safe if it goes wrong.</b>"
+    },
+    {
+      "tag": "Build",
+      "icon": "workflow",
+      "step": "Weeks 2 to 3",
+      "title": "Build it on your own tools",
+      "body": "Shown working, tested together. <b>Not described in a deck.</b>"
+    },
+    {
+      "tag": "Own it",
+      "icon": "key",
+      "step": "Week 4",
+      "title": "Hand it over",
+      "body": "It runs in your business, in your words. <b>You can extend it alone.</b>"
+    }
+  ]
+}

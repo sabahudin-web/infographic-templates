@@ -1,0 +1,40 @@
+{
+  "layout": "standout",
+  "title": [
+    "Everyone Has AI.",
+    "Few Have <g>a System</g>."
+  ],
+  "subtitle": "<b>Same tools, same prompts, same results.</b> Here's the difference.",
+  "field": {
+    "cols": 12,
+    "rows": 6,
+    "pick": [
+      2,
+      7
+    ],
+    "label": "You, with a system",
+    "sub": "Same tools. Your rules.",
+    "caption": "Everyone else: chat, copy, paste, repeat."
+  },
+  "cards": [
+    {
+      "tag": "Your taste",
+      "icon": "heart",
+      "title": "Drafts from your best work",
+      "body": "Not from a blank prompt. <b>It sounds like you.</b>"
+    },
+    {
+      "tag": "Your yes",
+      "icon": "hand",
+      "title": "Nothing goes out alone",
+      "body": "Every send waits for <b>one click from you.</b>"
+    },
+    {
+      "tag": "Your loop",
+      "icon": "refresh-cw",
+      "title": "It learns every week",
+      "body": "Each edit becomes an example. <b>Next draft is closer.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

@@ -1,0 +1,14 @@
+/* Layout: numbered checklist (static 01). Rows with a check, the item, and one line of why. */
+  .board.is-checklist { position: relative; flex: 1; margin: 34px 34px 30px; display: flex; flex-direction: column; gap: 12px; }
+  .is-checklist .card { flex: 1; display: grid; grid-template-columns: 58px 300px 1fr 36px; align-items: center; column-gap: 22px; padding: 10px 24px 10px 14px; border-radius: 18px; }
+  .is-checklist .tick {
+    width: 58px; height: 58px; border-radius: 17px; display: grid; place-items: center;
+    background: color-mix(in srgb, var(--h) 16%, #fff); color: var(--h-text, var(--h));
+    box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--h) 28%, transparent);
+  }
+  .is-checklist .what { display: flex; flex-direction: column; gap: 3px; }
+  .is-checklist .num { font-family: var(--font-mono); font-size: 14px; font-weight: 600; letter-spacing: .1em; color: var(--h-text, var(--h)); }
+  .is-checklist h3 { font-size: 25px; line-height: 1.12; letter-spacing: -0.03em; margin: 0; }
+  .is-checklist .body { font-size: 20px; line-height: 1.35; padding-left: 22px; border-left: 1.5px solid color-mix(in srgb, var(--h) 22%, #fff); }
+  .is-checklist .body code { font-family: var(--font-mono); font-size: 17px; background: #fff; border: 1.5px solid var(--line); border-radius: 8px; padding: 1px 7px; color: var(--ink); }
+  .is-checklist .done { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--b-mint, #CAF1CD); color: var(--b-mint-text, #2F8F57); }

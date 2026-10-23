@@ -1,0 +1,44 @@
+{
+  "layout": "rings",
+  "theme": "purple-dark",
+  "highlight": "sticker",
+  "title": [
+    "Start Small,",
+    "<g>Grow From Proof</g>"
+  ],
+  "subtitle": "<b>Each ring starts only when the last one worked.</b>",
+  "cards": [
+    {
+      "ring": "Audit",
+      "tag": "Core",
+      "icon": "search",
+      "title": "AI Audit",
+      "chip": "€750, once",
+      "body": "I map a real week and show <b>where AI fits.</b>"
+    },
+    {
+      "ring": "Pilot",
+      "tag": "Ring 2",
+      "icon": "rocket",
+      "title": "AI Ops pilot",
+      "chip": "€2,000, one month",
+      "body": "One workflow built and tested together. <b>Proof comes early.</b>"
+    },
+    {
+      "ring": "Partner",
+      "tag": "Ring 3",
+      "icon": "users",
+      "title": "AI Ops Partner",
+      "chip": "€2,000 a month, 3 months to start",
+      "body": "More workflows, <b>built and run with you.</b>"
+    },
+    {
+      "ring": "Yours",
+      "tag": "Ring 4",
+      "icon": "key",
+      "title": "You own it",
+      "chip": "your laptop",
+      "body": "It runs in your business, in your words. <b>You can extend it alone.</b>"
+    }
+  ]
+}

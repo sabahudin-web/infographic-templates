@@ -1,0 +1,51 @@
+{
+  "layout": "ladder",
+  "title": [
+    "The 5 Levels of",
+    "<g>AI in Business</g>"
+  ],
+  "subtitle": "<b>Most teams stop at level 1.</b> The value starts at 3.",
+  "cards": [
+    {
+      "title": "Chat",
+      "body": "You ask, it answers, you copy it over.",
+      "chips": [
+        "ChatGPT",
+        "one-off"
+      ]
+    },
+    {
+      "title": "Saved prompts",
+      "body": "The same good question, kept and reused.",
+      "chips": [
+        "templates",
+        "faster"
+      ]
+    },
+    {
+      "title": "Workflows",
+      "body": "Steps that run on their own, start to finish.",
+      "chips": [
+        "triggers",
+        "no copy-paste"
+      ]
+    },
+    {
+      "title": "AI team",
+      "body": "Rooms that draft real work for you to approve.",
+      "chips": [
+        "drafts",
+        "your yes"
+      ]
+    },
+    {
+      "title": "Operating system",
+      "body": "Every room, one memory, one inbox, one loop.",
+      "chips": [
+        "learns",
+        "owned by you"
+      ]
+    }
+  ],
+  "highlight": "sticker"
+}

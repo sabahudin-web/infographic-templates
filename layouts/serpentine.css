@@ -1,0 +1,13 @@
+/* Layout: serpentine, a path that snakes across rows (skill BP serpentine). */
+  .board.is-serpentine { position: relative; flex: 1; margin: 46px 34px 32px; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 50px 90px; }
+  .is-serpentine .card { padding: 30px 22px 18px 104px; justify-content: center; }
+  .is-serpentine .node {
+    position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 66px; height: 66px; border-radius: 20px;
+    display: grid; place-items: center; background: var(--h); color: var(--on-h, #fff); font-family: var(--font-display); font-size: 30px;
+  }
+  .is-serpentine .card h3 { font-size: 27px; margin-bottom: 8px; }
+  .is-serpentine .body { font-size: 21px; line-height: 1.38; }
+  .is-serpentine .chip { margin: 10px 0 0; }
+  .is-serpentine .card.last { background: var(--b-mint); border-color: #AEE3B3; }
+  .is-serpentine .card.last .node { background: var(--purple); color: #fff; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 0; }

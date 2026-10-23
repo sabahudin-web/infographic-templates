@@ -1,0 +1,45 @@
+{
+  "layout": "serpentine",
+  "title": [
+    "From First Chat to a",
+    "<g>Running System</g>"
+  ],
+  "subtitle": "<b>Every step is small.</b> You can stop after any of them.",
+  "cards": [
+    {
+      "tag": "Talk",
+      "title": "A first conversation",
+      "body": "You tell me where you're stuck. <b>No pitch yet.</b>",
+      "chip": "free"
+    },
+    {
+      "tag": "Audit",
+      "title": "AI Audit",
+      "body": "I map your work and show <b>where AI fits.</b>",
+      "chip": "€750"
+    },
+    {
+      "tag": "Pilot",
+      "title": "One month, one workflow",
+      "body": "We build one thing and <b>test it together.</b>",
+      "chip": "€2,000"
+    },
+    {
+      "tag": "Proof",
+      "title": "It runs for real",
+      "body": "In your tools, in your words. <b>Shown, not described.</b>"
+    },
+    {
+      "tag": "Partner",
+      "title": "AI Ops Partner",
+      "body": "More workflows, built and run <b>with you.</b>",
+      "chip": "€2,000 / month"
+    },
+    {
+      "tag": "Yours",
+      "title": "You own it",
+      "body": "It lives in your business. <b>You can run it without me.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

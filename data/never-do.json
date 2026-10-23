@@ -1,0 +1,51 @@
+{
+  "layout": "number-list",
+  "highlight": "sticker",
+  "title": [
+    "8 Things My AI Team",
+    "Can <g>Never</g> Do"
+  ],
+  "subtitle": "<b>Written into the rulebook.</b> No setting turns them off.",
+  "cards": [
+    {
+      "icon": "shield",
+      "title": "Act without my yes",
+      "body": "Nothing runs without an <b>approved proposal</b>."
+    },
+    {
+      "icon": "repeat",
+      "title": "Do the same job twice",
+      "body": "Every approved job <b>runs once</b>. Never again by mistake."
+    },
+    {
+      "icon": "key",
+      "title": "Give itself more access",
+      "body": "New tools and rights <b>come only from me</b>."
+    },
+    {
+      "icon": "layers",
+      "title": "Touch another room's work",
+      "body": "Sales can't edit delivery. <b>Each room stays in its lane.</b>"
+    },
+    {
+      "icon": "database",
+      "title": "Change the memory's shape",
+      "body": "The ledger only changes <b>through a reviewed update</b>."
+    },
+    {
+      "icon": "file-text",
+      "title": "Save a password in the code",
+      "body": "Keys live <b>outside the code</b>, always."
+    },
+    {
+      "icon": "users",
+      "title": "Name a client in lessons",
+      "body": "What it learns is <b>anonymised</b> when written."
+    },
+    {
+      "icon": "zap",
+      "title": "Spend past its budget",
+      "body": "Every timer has a <b>monthly limit</b>. It stops there."
+    }
+  ]
+}

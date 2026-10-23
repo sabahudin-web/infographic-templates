@@ -1,0 +1,16 @@
+/* Layout: folder structure (static 19). A root, then one row per folder: icon, name, what lives there, sub-folders. */
+  .board.is-folder-tree { position: relative; flex: 1; margin: 30px 34px 30px 30px; display: flex; flex-direction: column; gap: 11px; }
+  .is-folder-tree .root {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; padding: 12px 22px 12px 14px; border-radius: 16px;
+    background: linear-gradient(180deg, var(--purple), var(--purple-deep)); color: #fff; box-shadow: var(--shadow-hub);
+    font-family: var(--font-mono); font-size: 22px; font-weight: 600; margin-bottom: 4px;
+  }
+  .is-folder-tree .root img { width: 40px; height: 40px; }
+  .is-folder-tree .card { flex: 1; margin-left: 66px; display: grid; grid-template-columns: 52px 190px 1fr; align-items: center; column-gap: 18px; padding: 8px 18px 8px 12px; border-radius: 16px; }
+  .is-folder-tree .fold { width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center; background: color-mix(in srgb, var(--h) 15%, #fff); color: var(--h-text, var(--h)); }
+  .is-folder-tree .name { font-family: var(--font-mono); font-size: 21px; font-weight: 600; color: var(--ink); }
+  .is-folder-tree .txt { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .is-folder-tree .body { font-size: 19.5px; line-height: 1.3; }
+  .is-folder-tree .subs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .is-folder-tree .subs span { font-family: var(--font-mono); font-size: 14.5px; font-weight: 600; padding: 3px 9px; border-radius: 8px; background: #fff; border: 1.5px solid var(--line); color: var(--ink-soft); }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }

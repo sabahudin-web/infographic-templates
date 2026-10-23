@@ -1,0 +1,13 @@
+/* Layout: routine board (static skill 07-routine-diagram). Stacked stages, each with a row of tool or metric tiles. */
+  .board.is-routine-board { position: relative; flex: 1; margin: 40px 28px 28px; display: flex; flex-direction: column; gap: 24px; }
+  .is-routine-board .stage-row { flex: 1; display: grid; grid-template-columns: 330px 1fr; gap: 22px; align-items: center; padding: 30px 22px 20px; }
+  .is-routine-board .when { display: block; font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--h-text, var(--h)); margin-bottom: 6px; }
+  .is-routine-board h3 { font-size: 30px; margin-bottom: 6px; }
+  .is-routine-board .body { font-size: 21px; line-height: 1.38; }
+  .is-routine-board .tiles { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 12px; height: 100%; }
+  .is-routine-board .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center;
+    background: #fff; border-radius: 16px; padding: 12px 8px; box-shadow: inset 0 0 0 1.5px var(--line); font-size: 18.5px; font-weight: 600; color: var(--ink); line-height: 1.2; }
+  .is-routine-board .tile .ic { width: 46px; height: 46px; }
+  .is-routine-board .tile.metric { background: var(--b-mint); box-shadow: inset 0 0 0 1.5px rgba(47,143,87,.22); }
+  .is-routine-board .tile.metric b { font-family: var(--font-display); font-weight: 400; font-size: 38px; color: var(--purple); line-height: 1; }
+  .is-routine-board .tile.metric span { font-size: 16.5px; color: var(--ink); }

@@ -1,0 +1,28 @@
+/* Layout: receipt, a cost teardown (skill BP-receipt). A paper receipt with a torn edge, one row per line, a total. */
+  .board.is-receipt { position: relative; flex: 1; margin: 34px 30px 30px; display: flex; flex-direction: column; align-items: center; gap: 30px; }
+  .paper {
+    position: relative; flex: 1; width: 760px; display: flex; flex-direction: column; padding: 30px 40px 46px;
+    background: #fff; border-radius: 26px 26px 0 0;
+    box-shadow: 0 1px 0 rgba(22,19,31,.04), 0 30px 60px -34px rgba(70,49,135,.55), inset 0 0 0 1.5px rgba(70,49,135,.08);
+  }
+  .paper .edge { position: absolute; left: 0; right: 0; bottom: -17px; height: 18px; width: 100%; }
+  .paper .head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 2px dashed var(--line); }
+  .paper .head b { font-family: var(--font-mono); font-size: 18px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+  .paper .head span { font-family: var(--font-mono); font-size: 17px; color: var(--ink-soft); }
+  .example { position: absolute; top: -14px; right: 26px; font-family: var(--font-mono); font-size: 14px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    background: var(--b-peach, #FFE8DC); color: var(--b-orange-text, #E2560F); padding: 6px 12px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px rgba(226,86,15,.2); }
+  .rows { flex: 1; display: flex; flex-direction: column; justify-content: space-around; padding: 10px 0; }
+  .is-receipt .card {
+    flex-direction: row; align-items: center; gap: 18px; padding: 10px 12px; margin: 0 -12px;
+    background: transparent; border: 0; box-shadow: none; border-radius: 16px;
+  }
+  .is-receipt .card .logo { --s: 48px; }
+  .is-receipt .card .what { flex: 1; display: flex; flex-direction: column; line-height: 1.2; }
+  .is-receipt .card .what b { font-size: 23px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
+  .is-receipt .card .what small { font-size: 17px; color: var(--ink-soft); margin-top: 3px; }
+  .is-receipt .card .price { font-family: var(--font-mono); font-size: 24px; font-weight: 600; color: var(--ink); }
+  .total { display: flex; align-items: baseline; justify-content: space-between; padding-top: 20px; border-top: 2.5px solid var(--purple); }
+  .total b { font-family: var(--font-display); font-size: 34px; font-weight: 400; color: var(--purple); }
+  .total .sum { font-family: var(--font-display); font-size: 46px; color: var(--b-orange-text, #E2560F); }
+  .total-note { margin-top: 8px; font-size: 18px; color: var(--ink-soft); text-align: right; }
+  .is-receipt .payoff { width: 760px; }

@@ -1,0 +1,50 @@
+{
+  "layout": "wave",
+  "theme": "purple-dark",
+  "title": [
+    "How Most Owners",
+    "<g>Do AI</g>"
+  ],
+  "subtitle": "<b>Up, down, panic, repeat.</b> Or one steady line.",
+  "chart": {
+    "waveLabel": "Tool by tool",
+    "steadyLabel": "One system, one workflow at a time",
+    "yLabel": "Effort",
+    "xLabel": "Months"
+  },
+  "cards": [
+    {
+      "tag": "Week 1",
+      "at": [
+        19,
+        22
+      ],
+      "quote": "\"New tool. This changes everything.\""
+    },
+    {
+      "tag": "Week 3",
+      "at": [
+        38,
+        72
+      ],
+      "quote": "\"Too busy. I'll come back to it.\""
+    },
+    {
+      "tag": "Month 2",
+      "at": [
+        60,
+        24
+      ],
+      "quote": "\"Everyone's ahead. Buy three more tools.\""
+    },
+    {
+      "tag": "Month 3",
+      "at": [
+        82,
+        70
+      ],
+      "quote": "\"AI doesn't work for my business.\""
+    }
+  ],
+  "highlight": "sticker"
+}

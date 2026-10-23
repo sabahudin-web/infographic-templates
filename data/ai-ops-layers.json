@@ -1,0 +1,43 @@
+{
+  "layout": "layers",
+  "title": [
+    "The 4 Layers of an",
+    "<g>AI Ops System</g>"
+  ],
+  "subtitle": "<b>Tools on the outside.</b> You at the core.",
+  "logos": [
+    "gmail",
+    "notion",
+    "hubspot",
+    "slack",
+    "calendly",
+    "airtable"
+  ],
+  "cards": [
+    {
+      "tag": "Tools",
+      "icon": "layers",
+      "title": "The apps you already use",
+      "body": "Email, calendar, CRM, docs. <b>No new software to learn.</b>"
+    },
+    {
+      "tag": "Workflows",
+      "icon": "workflow",
+      "title": "Steps that run on a trigger",
+      "body": "A new lead or a Monday timer <b>starts the work.</b>"
+    },
+    {
+      "tag": "Taste",
+      "icon": "sparkles",
+      "title": "Your examples and rules",
+      "body": "Drafts are scored against <b>your best past work.</b>"
+    },
+    {
+      "tag": "Core",
+      "icon": "hand",
+      "title": "Your yes",
+      "body": "Nothing leaves <b>without your approval.</b>"
+    }
+  ],
+  "highlight": "sticker"
+}

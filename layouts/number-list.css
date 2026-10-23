@@ -1,0 +1,11 @@
+/* Layout: big-number list (static 02). A coloured number block, then the line. */
+  .board.is-number-list { position: relative; flex: 1; margin: 34px 34px 30px; display: flex; flex-direction: column; gap: 12px; }
+  .is-number-list .card { flex: 1; display: grid; grid-template-columns: 104px 1fr 50px; align-items: stretch; padding: 0; overflow: hidden; border-radius: 18px; }
+  .is-number-list .big {
+    display: grid; place-items: center; background: var(--h); color: var(--on-h, #fff);
+    font-family: var(--font-display); font-size: 44px; letter-spacing: -0.02em;
+  }
+  .is-number-list .txt { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 10px 24px; }
+  .is-number-list h3 { font-size: 25px; line-height: 1.12; letter-spacing: -0.03em; margin: 0; }
+  .is-number-list .body { font-size: 19.5px; line-height: 1.35; }
+  .is-number-list .no { align-self: center; color: var(--h-text, var(--h)); opacity: .75; }

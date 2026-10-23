@@ -1,0 +1,43 @@
+{
+  "layout": "compare",
+  "title": [
+    "Same Week.",
+    "<g>Two Ways.</g>"
+  ],
+  "subtitle": "<b>The work doesn't change.</b> Who does the boring part does.",
+  "left": "By hand",
+  "right": "With an AI Ops team",
+  "cards": [
+    {
+      "tag": "Drafting",
+      "icon": "pencil-line",
+      "left": "From a blank page, every time",
+      "right": "From your own best examples"
+    },
+    {
+      "tag": "Quality",
+      "icon": "circle-check",
+      "left": "You reread it all twice",
+      "right": "A critic scores it before you see it"
+    },
+    {
+      "tag": "Sending",
+      "icon": "send",
+      "left": "Copy, paste, hope",
+      "right": "Nothing goes out without your yes"
+    },
+    {
+      "tag": "Follow-up",
+      "icon": "clock",
+      "left": "When you remember",
+      "right": "Checked after 5 days, every time"
+    },
+    {
+      "tag": "Learning",
+      "icon": "lightbulb",
+      "left": "Same fixes next week",
+      "right": "Every edit teaches the next draft"
+    }
+  ],
+  "highlight": "sticker"
+}

@@ -1,0 +1,121 @@
+{
+  "layout": "radial-hub",
+  "highlight": "sticker",
+  "title": [
+    "<g>16 Tools</g>,",
+    "One Engine"
+  ],
+  "subtitle": "<b>Grouped by job.</b> All of it runs through Claude Code.",
+  "hub": {
+    "logo": "claude",
+    "label": "THE ENGINE",
+    "title": "Claude Code",
+    "sub": "Reads, drafts and runs every room"
+  },
+  "cards": [
+    {
+      "tag": "Run the day",
+      "what": "Where the work lives",
+      "tools": [
+        {
+          "logo": "notion",
+          "name": "Notion",
+          "role": "Docs"
+        },
+        {
+          "logo": "slack",
+          "name": "Slack",
+          "role": "Team"
+        },
+        {
+          "logo": "gmail",
+          "name": "Gmail",
+          "role": "Inbox"
+        },
+        {
+          "logo": "calendly",
+          "name": "Calendly",
+          "role": "Calls"
+        }
+      ]
+    },
+    {
+      "tag": "Find clients",
+      "what": "Who to talk to",
+      "tools": [
+        {
+          "logo": "linkedin",
+          "name": "LinkedIn",
+          "role": "Signals"
+        },
+        {
+          "logo": "apollo",
+          "name": "Apollo",
+          "role": "Contacts"
+        },
+        {
+          "logo": "clay",
+          "name": "Clay",
+          "role": "Research"
+        },
+        {
+          "logo": "hubspot",
+          "name": "HubSpot",
+          "role": "Pipeline"
+        }
+      ]
+    },
+    {
+      "tag": "Build and deliver",
+      "what": "What clients get",
+      "tools": [
+        {
+          "logo": "supabase",
+          "name": "Supabase",
+          "role": "Memory"
+        },
+        {
+          "logo": "vercel",
+          "name": "Vercel",
+          "role": "Portal"
+        },
+        {
+          "logo": "github",
+          "name": "GitHub",
+          "role": "Code"
+        },
+        {
+          "logo": "n8n",
+          "name": "n8n",
+          "role": "Flows"
+        }
+      ]
+    },
+    {
+      "tag": "Make content",
+      "what": "How people find me",
+      "tools": [
+        {
+          "logo": "youtube",
+          "name": "YouTube",
+          "role": "Video"
+        },
+        {
+          "logo": "instagram",
+          "name": "Instagram",
+          "role": "Posts"
+        },
+        {
+          "logo": "tella",
+          "name": "Tella",
+          "role": "Recording"
+        },
+        {
+          "logo": "blotato",
+          "name": "Blotato",
+          "role": "Publishing"
+        }
+      ]
+    }
+  ]
+}

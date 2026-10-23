@@ -1,0 +1,51 @@
+{
+  "layout": "radar",
+  "highlight": "sticker",
+  "title": [
+    "Never Miss a",
+    "<g>Warm Lead</g>"
+  ],
+  "subtitle": "<b>It watches six places.</b> I only see who is ready.",
+  "hub": {
+    "title": "Always on",
+    "sub": "Watching for buying signals"
+  },
+  "cards": [
+    {
+      "tag": "Comments",
+      "logo": "linkedin",
+      "title": "LinkedIn",
+      "body": "Who comments on my posts, and twice."
+    },
+    {
+      "tag": "Replies",
+      "logo": "gmail",
+      "title": "Inbox",
+      "body": "A reply that asks a real question."
+    },
+    {
+      "tag": "Bookings",
+      "logo": "calendly",
+      "title": "Calendar",
+      "body": "Someone books a call on their own."
+    },
+    {
+      "tag": "Messages",
+      "logo": "whatsapp",
+      "title": "WhatsApp",
+      "body": "A past client asks for something new."
+    },
+    {
+      "tag": "Deals",
+      "logo": "hubspot",
+      "title": "CRM",
+      "body": "A quiet deal moves a stage."
+    },
+    {
+      "tag": "Calls",
+      "logo": "fireflies",
+      "title": "Call notes",
+      "body": "They said \"next month\" on a call."
+    }
+  ]
+}

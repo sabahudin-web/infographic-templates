@@ -1,0 +1,17 @@
+/* Layout: radar / monitor loop (skill L3). A watching engine in the middle, sources on a ring, a sweep reads them in turn. */
+  .board.is-radar { position: relative; flex: 1; margin: 34px 26px 30px; }
+  .rd-ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+  .rd-hub {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 330px; height: 330px; border-radius: 50%; z-index: 2;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #fff;
+    background: radial-gradient(90% 80% at 50% 10%, rgba(255,103,25,.30), transparent 60%), linear-gradient(180deg, var(--purple), var(--purple-deep));
+    box-shadow: var(--shadow-hub), 0 0 0 14px rgba(70,49,135,.07), 0 0 0 30px rgba(70,49,135,.04), inset 0 0 0 1.5px rgba(255,255,255,.14);
+  }
+  .rd-hub img { width: 74px; height: 74px; }
+  .rd-hub h2 { font-family: var(--font-display); font-weight: 400; font-size: 34px; margin-top: 4px; }
+  .rd-hub p { font-size: 18px; color: rgba(255,255,255,.78); margin-top: 6px; max-width: 220px; line-height: 1.3; }
+  .is-radar .card { position: absolute; width: 340px; transform: translate(-50%, -50%); flex-direction: row; align-items: center; gap: 16px; padding: 30px 18px 18px; z-index: 3; }
+  .is-radar .card .txt { display: flex; flex-direction: column; min-width: 0; }
+  .is-radar .card h3 { font-size: 26px; line-height: 1.12; margin-bottom: 6px; padding: 0 !important; }
+  .is-radar .card .body { font-size: 19.5px; line-height: 1.34; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }

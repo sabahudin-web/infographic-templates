@@ -1,0 +1,20 @@
+/* Layout: decision tree, yes runs down, each no branches right to an outcome (static skill 11). */
+  .board.is-decision-tree { position: relative; flex: 1; margin: 34px 30px 30px; display: flex; flex-direction: column; gap: 44px; }
+  .dt-row { flex: 1; display: grid; grid-template-columns: 1fr 64px 300px; align-items: center; }
+  .dt-row .card { height: 100%; justify-content: center; padding: 28px 70px 16px 24px; }
+  .is-decision-tree .card h3 { font-size: 27px; margin-bottom: 6px; }
+  .is-decision-tree .body { font-size: 19.5px; line-height: 1.36; }
+  .dt-no { justify-self: center; transform: translateY(-20px); font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--paper-ink-soft); }
+  .dt-out {
+    display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 18px; height: 78%;
+    background: color-mix(in srgb, #fff 94%, transparent); border: 1.5px dashed color-mix(in srgb, var(--ink-soft) 45%, transparent);
+  }
+  .dt-out p { font-size: 18.5px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+  .dt-x { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: #F3EEEA; color: #8A8396; }
+  .dt-yes {
+    position: absolute; transform: translateY(-50%); z-index: 2; padding: 3px 10px; border-radius: 999px;
+    font-family: var(--font-mono); font-size: 14px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    background: var(--b-mint); color: var(--b-mint-text);
+  }
+  .is-decision-tree .payoff { margin-top: 0; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }

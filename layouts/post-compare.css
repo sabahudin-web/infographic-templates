@@ -1,0 +1,26 @@
+/* Layout: post compare (static skill comparison-posts). Per idea, a weaker post and a better one, side by side. */
+  .board.is-post-compare { position: relative; flex: 1; margin: 34px 30px 28px; display: flex; flex-direction: column; gap: 24px; }
+  .pc-section { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+  .pc-label { display: flex; align-items: center; gap: 12px; font-family: var(--font-mono); font-size: 16px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--paper-ink-soft); }
+  .pc-label span { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; background: var(--b-orange); color: #fff; font-family: var(--font-display); letter-spacing: 0; font-size: 17px; }
+  .pc-pair { flex: 1; display: grid; grid-template-columns: 1fr 1.12fr; gap: 18px; }
+  .pc-post { padding: 34px 22px 18px; }
+  .pc-post.weak { background: #F4F1F7; border-color: #E3DEEA; }
+  .pc-post.strong { background: linear-gradient(180deg, #F0FBF1 0%, #fff 55%); border-color: #AEE3B3; }
+  .pc-flag { position: absolute; top: -15px; left: 16px; display: inline-flex; align-items: center; gap: 7px; padding: 5px 13px 5px 9px; border-radius: 9px; font-size: 16px; font-weight: 700; }
+  .pc-flag.weak { background: #E6E1EC; color: #6B6480; }
+  .pc-flag.strong { background: var(--b-mint); color: #1F6B3D; }
+  .pc-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .pc-top .logo { margin-left: auto; }
+  .pc-post .avatar { width: 46px; height: 46px; flex: none; box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--line); }
+  .pc-post .avatar.ghost { background: #E3DEEA; color: #A59EB3; overflow: hidden; align-items: end; }
+  .pc-who { display: flex; flex-direction: column; line-height: 1.2; }
+  .pc-who b { font-size: 18.5px; font-weight: 700; color: var(--ink); }
+  .pc-who small { font-size: 15.5px; color: var(--ink-soft); }
+  .pc-text { font-size: 24px; line-height: 1.42; color: var(--ink); white-space: pre-line; }
+  .pc-post.weak .pc-text { color: #6B6480; }
+  .pc-actions { margin-top: auto; display: flex; gap: 22px; padding: 12px 2px 0; color: #A59EB3; }
+  .pc-post.strong .pc-actions { color: #7FBF8E; }
+  .pc-why { margin-top: 12px; padding-top: 12px; border-top: 1.5px solid var(--line); font-size: 17.5px; font-weight: 600; line-height: 1.32; }
+  .pc-post.weak .pc-why { color: #8A8396; }
+  .pc-post.strong .pc-why { color: #1F6B3D; }

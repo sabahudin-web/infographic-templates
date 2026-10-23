@@ -1,0 +1,19 @@
+/* Layout: comparison matrix, 3 options across rows of attributes, one recommended (skill BP comparison matrix). */
+  .board.is-matrix { position: relative; flex: 1; margin: 40px 30px 30px; display: flex; flex-direction: column; gap: 14px; }
+  .mx-head { display: grid; grid-template-columns: 200px repeat(3, 1fr); gap: 12px; align-items: end; }
+  .mx-opt {
+    position: relative; text-align: center; padding: 18px 10px 16px; border-radius: 18px; background: #fff;
+    border: 1.5px solid var(--line); box-shadow: var(--shadow-card);
+  }
+  .mx-opt b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 27px; color: var(--purple); line-height: 1.05; }
+  .mx-opt span { display: block; margin-top: 6px; font-size: 18px; font-weight: 600; color: var(--ink-soft); }
+  .mx-opt.rec { background: var(--b-mint); border-color: #AEE3B3; }
+  .mx-opt.rec::before {
+    content: attr(data-flag); position: absolute; top: -16px; left: 50%; transform: translateX(-50%); white-space: nowrap;
+    background: var(--purple); color: #fff; font-size: 15px; font-weight: 700; padding: 5px 12px; border-radius: 999px;
+  }
+  .is-matrix .card { flex: 1; display: grid; grid-template-columns: 200px repeat(3, 1fr); gap: 12px; align-items: stretch; padding: 10px; border-radius: 20px; }
+  .mx-label { display: flex; align-items: center; gap: 12px; padding-left: 6px; }
+  .mx-label b { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+  .mx-cell { display: grid; place-items: center; text-align: center; border-radius: 14px; padding: 10px 12px; background: #fff; border: 1.5px solid var(--line); font-size: 20px; line-height: 1.28; font-weight: 600; color: var(--ink); }
+  .mx-cell.rec { background: color-mix(in srgb, var(--b-mint) 60%, #fff); border-color: #AEE3B3; }

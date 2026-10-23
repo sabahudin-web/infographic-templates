@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../tokens.css">
+<script src="../vendor/rough.js"></script>
+<script src="../components/icons.js"></script>
+<script>window.Layouts = {};</script>
+<script src="../assets/logos/index.js"></script>
+<script src="../layouts/LAYOUT.js" onerror="this.remove()"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../components/base.css">
+<link rel="stylesheet" href="../layouts/LAYOUT.css">
+<link rel="stylesheet" href="../themes/THEME.css">
+</head>
+<body>
+<img class="pattern" src="../assets/pattern-scales.svg" alt="">
+
+<header>
+  <h1 id="title"></h1>
+  <div class="sub"><span id="subtitle"></span><span class="avatar" id="avatar"></span><span class="name" id="author"></span></div>
+</header>
+
+<main class="board" id="board"></main>
+
+<footer class="bar" id="bar"><span class="avatar" id="bar-avatar"></span><span class="who"><b id="bar-name"></b><small id="bar-role"></small></span><img class="lockup" src="../assets/logo/lockup-horizontal-dark.svg" alt="Logo"></footer>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+  // One template, several layouts. The data file picks the layout; the theme picks the colours.
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const $ = id => document.getElementById(id);
+  const layout = D.layout || 'hub';
+  document.body.dataset.layout = layout;
+  document.body.dataset.hl = D.highlight || 'sticker';
+  const board = $('board');
+  board.classList.add('is-' + layout);
+
+
+  // header: title with the sticker words, subtitle, byline
+  $('title').innerHTML = D.title.join('<br>').replace(/<g>/g, '<span class="hl">').replace(/<\/g>/g, '</span>');
+  $('subtitle').innerHTML = D.subtitle;
+  // byline: in the footer bar (default) or under the title
+  const byline = D.byline || 'footer';
+  document.body.dataset.byline = byline;
+  const face = D.author.photo ? `<img src="../assets/${D.author.photo}" alt="">` : D.author.initials;
+  if (byline === 'footer') {
+    $('avatar').remove(); $('author').remove(); $('bar-avatar').innerHTML = face;
+    $('bar-name').textContent = D.author.name; $('bar-role').textContent = D.author.role || '';
+  } else {
+    $('bar').remove(); $('avatar').innerHTML = face; $('author').textContent = D.author.name;
+  }
+
+  // colour roles for item i come from the theme (--hue-N, --on-h-N, ...), with --*-all as the fallback
+  function paint(el, i) {
+    el.style.setProperty('--h', `var(--hue-${i + 1})`);
+    for (const k of ['on-h', 'h-text', 'h-line', 'card-fill', 'card-line']) el.style.setProperty(`--${k}`, `var(--${k}-${i + 1}, var(--${k}-all))`);
+  }
+  const pad = i => String(i + 1).padStart(2, '0');
+  function card(c, i) {
+    const n = pad(i);
+    const el = document.createElement('section');
+    el.className = 'card'; el.id = `card-${n}`;
+    const tag = `<div class="tag"><i>${n}</i>${c.tag}</div>`;
+    const chip = c.chip ? `<div class="chip"><span class="chip-text" id="chip-${n}">${c.chip}</span><span class="caret" id="caret-${n}"></span></div>` : '';
+    const best = c.best ? `<p class="best"><span>${D.bestLabel || 'BEST FOR'}</span>${c.best}</p>` : '';
+    const body = `<p class="body">${c.body}</p>`;
+    // a card shows a real logo (c.logo, a slug in assets/logos) or else a line icon (c.icon)
+    const lm = c.logo && (window.UnstuckLogos || {})[c.logo];
+    const icon = lm ? `<span class="ic logo${lm.fill ? ' full' : ''}" style="--s:44px"><img src="../assets/logos/${c.logo}.png" alt="${c.logo}"></span>`
+      : c.icon ? `<span class="ic">${UnstuckIcons.svg(c.icon, 24)}</span>` : '';
+    el.innerHTML = layout === 'stairs'
+      ? `${tag}${icon}<div class="col-a"><h3>${c.title}</h3>${chip}</div><div class="col-b">${body}${best}</div>`
+      : `${tag}${icon}<h3>${c.title}</h3>${chip}${body}${best}${layout === 'grid' ? `<span class="num">${i + 1}</span>` : ''}`;
+    return el;
+  }
+
+  const builders = {
+    hub() {
+      // clockwise slots around the centre: top row, right, bottom row (right to left), left
+      const slots = [[1,1],[1,2],[1,3],[2,3],[3,3],[3,2],[3,1],[2,1]];
+      D.cards.forEach((c, i) => {
+        const el = card(c, i); paint(el, i);
+        el.style.gridRow = slots[i][0]; el.style.gridColumn = slots[i][1];
+        board.appendChild(el);
+      });
+      const hub = document.createElement('section');
+      hub.className = 'hub'; hub.id = 'hub'; hub.style.gridRow = 2; hub.style.gridColumn = 2;
+      hub.innerHTML = `<img src="../assets/logo/mark-dark.svg" alt=""><h2>${D.hub.title}</h2><p>${D.hub.sub}</p>`;
+      board.appendChild(hub);
+    },
+    stairs() {
+      D.cards.forEach((c, i) => {
+        const st = document.createElement('div');
+        st.className = 'stage'; st.id = `stage-${pad(i)}`; st.style.setProperty('--i', i); paint(st, i);
+        st.innerHTML = `<div class="node" id="node-${pad(i)}">${c.node ?? i + 1}</div>`;
+        st.appendChild(card(c, i));
+        board.appendChild(st);
+      });
+    },
+    grid() {
+      D.cards.forEach((c, i) => { const el = card(c, i); paint(el, i); board.appendChild(el); });
+    },
+    funnel() {
+      // stages narrow as they go down; the payoff closes it
+      D.cards.forEach((c, i) => {
+        const el = card(c, i); paint(el, i);
+        el.style.width = `${100 - i * (40 / Math.max(1, D.cards.length - 1))}%`;
+        board.appendChild(el);
+      });
+    },
+    compare() {
+      // two column heads, then one card per row: topic | the old way | the new way
+      const head = document.createElement('div');
+      head.className = 'cmp-head';
+      head.innerHTML = `<span></span><b class="old">${D.left}</b><b class="new">${UnstuckIcons.svg('sparkles', 20)}${D.right}</b>`;
+      board.appendChild(head);
+      D.cards.forEach((c, i) => {
+        const el = document.createElement('section');
+        el.className = 'card'; el.id = `card-${pad(i)}`; paint(el, i);
+        el.innerHTML = `<div class="topic">${c.icon ? `<span class="ic">${UnstuckIcons.svg(c.icon, 22)}</span>` : ''}<b>${c.tag}</b></div>
+          <p class="old">${UnstuckIcons.svg('x', 18)}<span>${c.left}</span></p>
+          <p class="new">${UnstuckIcons.svg('circle-check', 20)}<span>${c.right}</span></p>`;
+        board.appendChild(el);
+      });
+    },
+    tree() {
+      const root = document.createElement('section');
+      root.className = 'root'; root.id = 'hub';
+      root.innerHTML = `<img src="../assets/logo/mark-dark.svg" alt=""><div><h2>${D.root.title}</h2><p>${D.root.sub}</p></div>`;
+      board.appendChild(root);
+      const row = document.createElement('div'); row.className = 'branches';
+      D.cards.forEach((c, i) => {
+        const el = card(c, i); paint(el, i);
+        const leaves = `<ul class="leaves">${(c.leaves || []).map(l => `<li>${l}</li>`).join('')}</ul>`;
+        const best = el.querySelector('.best');
+        best ? best.insertAdjacentHTML('beforebegin', leaves) : el.insertAdjacentHTML('beforeend', leaves);
+        row.appendChild(el);
+      });
+      board.appendChild(row);
+    },
+    pipeline() {
+      const row = document.createElement('div'); row.className = 'lane';
+      D.cards.forEach((c, i) => {
+        const el = card(c, i); paint(el, i);
+        if (c.who) el.insertAdjacentHTML('beforeend', `<span class="actor${c.who === 'Me' ? ' me' : ''}">${UnstuckIcons.svg(c.who === 'Me' ? 'user-check' : 'bot', 18)}${c.who}</span>`);
+        row.appendChild(el);
+      });
+      board.appendChild(row);
+    },
+    ladder() {
+      D.cards.forEach((c, i) => {
+        const el = document.createElement('section');
+        el.className = 'card'; el.id = `card-${pad(i)}`; paint(el, i);
+        el.style.setProperty('--lvl', i / Math.max(1, D.cards.length - 1));
+        el.innerHTML = `<span class="lvl">${i + 1}</span>
+          <div class="txt"><h3>${c.title}</h3><p class="body">${c.body}</p></div>
+          <div class="chips">${(c.chips || []).map(x => `<span>${x}</span>`).join('')}</div>`;
+        board.appendChild(el);
+      });
+    },
+    spine() {
+      D.cards.forEach((c, i) => {
+        const el = card(c, i); paint(el, i);
+        el.classList.add(i % 2 ? 'right' : 'left');
+        el.style.gridRow = i + 1;
+        el.insertAdjacentHTML('afterbegin', `<span class="when">${c.when}</span>`);
+        board.appendChild(el);
+      });
+    },
+  };
+  // a payoff strip closes some layouts (mint, the result in one line)
+  function payoff() {
+    if (!D.payoff) return;
+    const p = document.createElement('div');
+    p.className = 'payoff'; p.id = 'payoff';
+    p.innerHTML = `<span class="ic">${UnstuckIcons.svg(D.payoff.icon || 'badge-check', 26)}</span><b>${D.payoff.text}</b>`;
+    board.appendChild(p);
+  }
+  // the toolkit every layout file gets (layouts/<name>.js registers Layouts[name] = { build(K), connect(K) })
+  const K = {
+    D, board, $, card, paint, pad, payoff: () => payoff(),
+    icon: (n, s = 24) => UnstuckIcons.svg(n, s),
+    // a logo from assets/logos in our premium tile; filled square logos fill the tile, others sit inside it
+    logo: (slug, size = 56) => {
+      const m = (window.UnstuckLogos || {})[slug];
+      if (!m) return `<span class="logo missing" style="--s:${size}px">${slug}</span>`;
+      return `<span class="logo${m.fill ? ' full' : ''}" style="--s:${size}px"><img src="../assets/logos/${slug}.png" alt="${slug}"></span>`;
+    },
+  };
+  const plug = window.Layouts[layout];
+  (plug ? plug.build : builders[layout])(K);
+  if (!plug || !plug.ownPayoff) payoff();
+
+
+  const svgEl = cls => { const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); s.classList.add(cls); return s; };
+  const hueOf = el => { const s = getComputedStyle(el); return (s.getPropertyValue('--h-line').trim() || s.getPropertyValue('--h-text').trim() || s.getPropertyValue('--h').trim()); };
+  const link = (id, d, hue, dot) => `<g class="link" id="${id}"><path d="${d}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0" fill="none" stroke="${hue}" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round"/>${dot ? `<circle cx="${dot.x}" cy="${dot.y}" r="4" fill="${hue}"/>` : ''}</g>`;
+
+  // connectors, drawn once fonts have settled so the boxes are final
+  const connectors = {
+    hub() {
+      const svg = svgEl('links');
+      const B = board.getBoundingClientRect(), H = $('hub').getBoundingClientRect();
+      const hc = { x: H.left + H.width / 2 - B.left, y: H.top + H.height / 2 - B.top };
+      const slots = [[1,1],[1,2],[1,3],[2,3],[3,3],[3,2],[3,1],[2,1]];
+      [...board.querySelectorAll('.card')].forEach((el, i) => {
+        const R = el.getBoundingClientRect();
+        const r = { l: R.left - B.left, t: R.top - B.top, w: R.width, h: R.height };
+        const [row, col] = slots[i];
+        let from, to, c1, c2;
+        if (row === 2) {
+          const side = col === 1 ? -1 : 1;
+          from = { x: hc.x + side * H.width / 2, y: hc.y };
+          to = { x: col === 1 ? r.l + r.w : r.l, y: r.t + r.h / 2 };
+          c1 = { x: from.x + side * 20, y: from.y }; c2 = { x: to.x - side * 20, y: to.y };
+        } else {
+          const dir = row === 1 ? -1 : 1;
+          from = { x: hc.x + (col - 2) * H.width * 0.3, y: hc.y + dir * H.height / 2 };
+          to = { x: r.l + r.w / 2 + (col - 2) * -r.w * 0.18, y: row === 1 ? r.t + r.h : r.t };
+          c1 = { x: from.x, y: from.y + dir * 30 }; c2 = { x: to.x, y: to.y - dir * 30 };
+        }
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`,
+          `M${from.x},${from.y} C${c1.x},${c1.y} ${c2.x},${c2.y} ${to.x},${to.y}`, hueOf(el), to));
+      });
+      board.prepend(svg);
+    },
+    stairs() {
+      // the rail: from each node down, then right into the next node, with a rounded corner
+      const svg = svgEl('rail');
+      const B = board.getBoundingClientRect();
+      const nodes = [...board.querySelectorAll('.node')].map(n => {
+        const R = n.getBoundingClientRect();
+        return { x: R.left - B.left + R.width / 2, y: R.top - B.top + R.height / 2, r: R.width / 2, hue: hueOf(n) };
+      });
+      for (let i = 1; i < nodes.length; i++) {
+        const a = nodes[i - 1], b = nodes[i], k = 16;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`,
+          `M${a.x},${a.y + a.r} L${a.x},${b.y - k} Q${a.x},${b.y} ${a.x + k},${b.y} L${b.x - b.r},${b.y}`, b.hue));
+      }
+      board.prepend(svg);
+    },
+    grid() {},
+    compare() {},
+    ladder() {},
+    funnel() {
+      // a short arrow between stages, and into the payoff
+      const svg = svgEl('links'), B = board.getBoundingClientRect();
+      const items = [...board.querySelectorAll('.card'), $('payoff')].filter(Boolean);
+      for (let i = 1; i < items.length; i++) {
+        const a = items[i - 1].getBoundingClientRect(), b = items[i].getBoundingClientRect();
+        const x = a.left + a.width / 2 - B.left, y1 = a.bottom - B.top, y2 = b.top - B.top;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`, `M${x},${y1 + 3} L${x},${y2 - 6} M${x - 6},${y2 - 12} L${x},${y2 - 5} L${x + 6},${y2 - 12}`, hueOf(items[i].classList.contains('card') ? items[i] : items[i - 1])));
+      }
+      board.prepend(svg);
+    },
+    tree() {
+      // elbow lines from the root down to each branch
+      const svg = svgEl('links'), B = board.getBoundingClientRect(), R = $('hub').getBoundingClientRect();
+      const x0 = R.left + R.width / 2 - B.left, y0 = R.bottom - B.top;
+      [...board.querySelectorAll('.card')].forEach((el, i) => {
+        const C = el.getBoundingClientRect(), x = C.left + C.width / 2 - B.left, y = C.top - B.top, mid = (y0 + y) / 2, k = 14;
+        const s = Math.sign(x - x0);
+        const d = s === 0 ? `M${x0},${y0} L${x},${y - 18}`
+          : `M${x0},${y0} L${x0},${mid - k} Q${x0},${mid} ${x0 + s * k},${mid} L${x - s * k},${mid} Q${x},${mid} ${x},${mid + k} L${x},${y - 18}`;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`, d, hueOf(el), { x, y: y - 18 }));
+      });
+      board.prepend(svg);
+    },
+    pipeline() {
+      // arrows between the lane cards, then down into the payoff
+      const svg = svgEl('links'), B = board.getBoundingClientRect();
+      const cards = [...board.querySelectorAll('.card')];
+      for (let i = 1; i < cards.length; i++) {
+        const a = cards[i - 1].getBoundingClientRect(), b = cards[i].getBoundingClientRect();
+        const y = a.top + 72 - B.top, x1 = a.right - B.left, x2 = b.left - B.left;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`, `M${x1 + 3},${y} L${x2 - 5},${y} M${x2 - 11},${y - 6} L${x2 - 4},${y} L${x2 - 11},${y + 6}`, hueOf(cards[i])));
+      }
+      const p = $('payoff');
+      if (p) {
+        const a = cards[cards.length - 1].getBoundingClientRect(), b = p.getBoundingClientRect();
+        const x = a.left + a.width / 2 - B.left;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(cards.length)}`, `M${x},${a.bottom - B.top + 3} L${x},${b.top - B.top - 5} M${x - 6},${b.top - B.top - 11} L${x},${b.top - B.top - 4} L${x + 6},${b.top - B.top - 11}`, hueOf(cards[cards.length - 1])));
+      }
+      board.prepend(svg);
+    },
+    spine() {
+      // the spine down the middle, a dot per card and a short arm to it
+      const svg = svgEl('links'), B = board.getBoundingClientRect();
+      const cards = [...board.querySelectorAll('.card')];
+      const x = B.width / 2, top = cards[0].getBoundingClientRect().top - B.top + 30, bot = cards[cards.length - 1].getBoundingClientRect().bottom - B.top - 30;
+      svg.insertAdjacentHTML('beforeend', `<line x1="${x}" y1="${top}" x2="${x}" y2="${bot}" stroke="var(--paper-ink)" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>`);
+      cards.forEach((el, i) => {
+        const C = el.getBoundingClientRect(), y = C.top - B.top + C.height / 2;
+        const edge = el.classList.contains('left') ? C.right - B.left : C.left - B.left;
+        svg.insertAdjacentHTML('beforeend', link(`link-${pad(i)}`, `M${x},${y} L${edge},${y}`, hueOf(el), { x, y }));
+      });
+      board.prepend(svg);
+    },
+  };
+
+  // hand-drawn title highlight (marker or underline); the sticker is pure CSS
+  function drawHighlights() {
+    const mode = document.body.dataset.hl;
+    if (mode === 'sticker') return;
+    const head = document.querySelector('header'), H = head.getBoundingClientRect();
+    const css = getComputedStyle(document.body);
+    const svg = svgEl('hl-svg'), rc = rough.svg(svg);
+    let seed = 7;
+    document.querySelectorAll('.hl').forEach(el => {
+      for (const r of el.getClientRects()) {
+        const x = r.left - H.left, y = r.top - H.top, w = r.width, h = r.height;
+        svg.appendChild(mode === 'underline'
+          ? rc.curve([[x - 4, y + h * .96], [x + w * .3, y + h * 1.02], [x + w * .68, y + h * .95], [x + w + 8, y + h * .99]],
+              { stroke: css.getPropertyValue('--hl-line').trim(), strokeWidth: 7, roughness: 1.3, bowing: 1.5, seed: seed++ })
+          : rc.polygon([[x - 10, y + h * .40], [x + w + 12, y + h * .33], [x + w + 8, y + h * .92], [x - 6, y + h * .98]],
+              { fill: css.getPropertyValue('--hl-marker').trim(), fillStyle: 'solid', stroke: 'none', roughness: 2.2, seed: seed++ }));
+      }
+    });
+    head.prepend(svg);
+  }
+
+  document.fonts.ready.then(() => requestAnimationFrame(() => {
+    drawHighlights();
+    if (plug) { K.svgEl = svgEl; K.hueOf = hueOf; K.link = link; plug.connect && plug.connect(K); } else connectors[layout]();
+    document.body.dataset.ready = '1';
+  }));
+</script>
+</body>
+</html>

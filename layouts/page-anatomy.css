@@ -1,0 +1,35 @@
+/* Layout: page anatomy (static skill landing-anatomy / annotated mockup). A mock page with pins, cards for each part. */
+  .board.is-page-anatomy { position: relative; flex: 1; margin: 34px 30px 28px; display: flex; flex-direction: column; gap: 30px; }
+  .pa-browser { flex: 1; display: flex; flex-direction: column; position: relative; z-index: 2; border-radius: 22px; background: #fff; overflow: visible; box-shadow: var(--shadow-card), 0 0 0 1.5px var(--line); }
+  .pa-bar { display: flex; align-items: center; gap: 8px; padding: 13px 18px; border-bottom: 1.5px solid var(--line); background: #FBF8FF; border-radius: 22px 22px 0 0; }
+  .pa-bar i { width: 12px; height: 12px; border-radius: 50%; background: #E2DBF3; }
+  .pa-bar i:first-child { background: #FFB38A; }
+  .pa-bar span { margin-left: 14px; flex: 1; padding: 6px 14px; border-radius: 999px; background: #fff; border: 1.5px solid var(--line); font: 600 15px var(--font-mono); color: var(--ink-soft); }
+  .pa-page { flex: 1; display: flex; flex-direction: column; padding: 18px 28px 26px; }
+  .pa-page nav { display: flex; align-items: center; gap: 18px; }
+  .pa-page nav img { height: 29px; }
+  .pa-links { display: flex; gap: 22px; margin-left: auto; font-size: 17px; font-weight: 600; color: var(--ink-soft); }
+  .pa-links em { font-style: normal; }
+  .pa-btn { display: inline-block; background: var(--purple); color: #fff; font-weight: 700; font-size: 19px; padding: 13px 22px; border-radius: 14px; }
+  .pa-btn.small { font-size: 16px; padding: 9px 15px; border-radius: 11px; }
+  .pa-hero { text-align: center; padding: 30px 40px 24px; }
+  .pa-hero h4 { position: relative; display: inline-block; font-family: var(--font-display); font-weight: 400; font-size: 38px; line-height: 1.1; color: var(--purple); letter-spacing: -0.01em; }
+  .pa-hero p { position: relative; display: inline-block; margin-top: 12px; font-size: 21px; line-height: 1.38; color: var(--ink-soft); max-width: 720px; }
+  .pa-cta { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 18px auto 0; width: max-content; }
+  .pa-cta small { font-size: 17px; color: var(--ink-soft); font-weight: 500; }
+  .pa-proof { flex: 1; justify-content: center; position: relative; margin: 6px 40px 0; padding: 16px 18px; border-radius: 16px; background: #F7F3FF; border: 1.5px solid var(--line); display: flex; flex-direction: column; gap: 9px; }
+  .pa-proof-head { display: flex; align-items: center; gap: 10px; color: var(--purple); font-size: 18px; }
+  .pa-proof-row { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 12px; background: #fff; font-size: 18px; font-weight: 600; color: var(--ink); }
+  .pa-proof-row em { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-style: normal; font-size: 15.5px; font-weight: 700; color: #2F8F57; background: var(--b-mint); padding: 5px 11px; border-radius: 999px; }
+  .pa-proof-row .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot.d0 { background: var(--b-orange); } .dot.d1 { background: var(--purple); } .dot.d2 { background: #2F8F57; }
+  .pa-pin {
+    position: absolute; top: -14px; right: -38px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; z-index: 3;
+    background: var(--h-text, var(--h)); color: #fff; font: 400 18px var(--font-display); box-shadow: 0 0 0 4px #fff, 0 8px 16px -6px rgba(42,29,90,.5);
+  }
+  .pa-proof .pa-pin { right: -16px; top: -16px; }
+  .pa-cards { flex: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .is-page-anatomy .card { padding: 32px 18px 16px; z-index: 2; }
+  .is-page-anatomy .card h3 { font-size: 24px; padding-right: 0 !important; margin-bottom: 8px; }
+  .is-page-anatomy .card > .ic { display: none; }
+  .is-page-anatomy .body { font-size: 19px; line-height: 1.38; }

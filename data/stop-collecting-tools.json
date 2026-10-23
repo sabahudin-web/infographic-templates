@@ -1,0 +1,39 @@
+{
+  "layout": "billboard",
+  "highlight": "sticker",
+  "title": [
+    "Stop Collecting",
+    "<g>AI Tools</g>"
+  ],
+  "subtitle": "<b>Tools don't run a business.</b> A system does.",
+  "claim": {
+    "kicker": "What I tell every owner",
+    "lines": [
+      "You don't need another AI tool.",
+      "You need <g>one system</g>",
+      "that runs your week."
+    ],
+    "icon": "circle-check",
+    "foot": "<b>Find, Fix, then Automate.</b> In that order."
+  },
+  "cards": [
+    {
+      "tag": "Find",
+      "icon": "search",
+      "title": "Watch the work first",
+      "body": "Map a real week before you <b>buy anything.</b>"
+    },
+    {
+      "tag": "Fix",
+      "icon": "wrench",
+      "title": "Make it simpler",
+      "body": "Cut the steps nobody needs. <b>Never automate a mess.</b>"
+    },
+    {
+      "tag": "Automate",
+      "icon": "zap",
+      "title": "Then let AI run it",
+      "body": "On the tools you <b>already have.</b>"
+    }
+  ]
+}

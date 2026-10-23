@@ -1,0 +1,79 @@
+{
+  "layout": "folder-tree",
+  "highlight": "sticker",
+  "title": [
+    "What's <g>Inside</g> My",
+    "AI Ops System"
+  ],
+  "subtitle": "<b>One folder, eight rooms.</b> Everything has one place to live.",
+  "root": "unstuck-os/",
+  "cards": [
+    {
+      "name": "brain/",
+      "body": "My taste: good and bad examples, guidelines, scoring.",
+      "subs": [
+        "exemplars",
+        "rules",
+        "rubrics"
+      ]
+    },
+    {
+      "name": "nodes/",
+      "body": "One room per job, each with its own playbooks.",
+      "subs": [
+        "audits",
+        "growth",
+        "operations",
+        "partner"
+      ]
+    },
+    {
+      "name": "clients/",
+      "body": "One space per client. Their rules win there.",
+      "subs": [
+        "unstuck",
+        "&lt;client&gt;"
+      ]
+    },
+    {
+      "name": "ledger/",
+      "body": "The shared memory every room reads and writes.",
+      "subs": [
+        "events",
+        "proposals",
+        "verdicts"
+      ]
+    },
+    {
+      "name": "apps/portal/",
+      "body": "The windows: my inbox and each client's page.",
+      "subs": [
+        "/inbox",
+        "/c/&lt;client&gt;"
+      ]
+    },
+    {
+      "name": "schedules/",
+      "body": "The timers, off until a room passes its tests.",
+      "subs": [
+        "schedules.yaml"
+      ]
+    },
+    {
+      "name": "tests/",
+      "body": "Golden cases. A playbook only changes if they pass.",
+      "subs": [
+        "goldens"
+      ]
+    },
+    {
+      "name": "brand/",
+      "body": "This look, in code. Every visual comes from here.",
+      "subs": [
+        "layouts",
+        "themes",
+        "fonts"
+      ]
+    }
+  ]
+}

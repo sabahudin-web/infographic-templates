@@ -1,0 +1,44 @@
+{
+  "layout": "stairs",
+  "highlight": "sticker",
+  "bestLabel": "YOU GET",
+  "title": [
+    "From <g>Stuck</g>",
+    "to Running"
+  ],
+  "subtitle": "<b>Find, Fix, then Automate.</b> The order matters.",
+  "cards": [
+    {
+      "tag": "Find",
+      "title": "Watch the work first",
+      "chip": "/audit",
+      "body": "I sit with the team and map a real week of work. <b>No tools yet.</b>",
+      "best": "A map of where the hours go.",
+      "icon": "search"
+    },
+    {
+      "tag": "Fix",
+      "title": "Make it simpler",
+      "chip": "fewer steps",
+      "body": "Cut the steps nobody needs before any AI touches it. <b>Never automate a mess.</b>",
+      "best": "A cleaner process on paper.",
+      "icon": "wrench"
+    },
+    {
+      "tag": "Automate",
+      "title": "AI takes the boring part",
+      "chip": "/run operations",
+      "body": "One workflow first, built on the tools you already have. <b>Shown working, not described.</b>",
+      "best": "One workflow running for real.",
+      "icon": "settings"
+    },
+    {
+      "tag": "Own it",
+      "title": "You run it without me",
+      "chip": "your laptop",
+      "body": "It lives in your business, in your words. <b>You can extend it alone.</b>",
+      "best": "A system you own and can grow.",
+      "icon": "key"
+    }
+  ]
+}

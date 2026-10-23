@@ -1,0 +1,17 @@
+/* Layout: wave (static skill 27-wave-chart). Up-and-down effort as a wave, a steady line as the other way. */
+  .board.is-wave { position: relative; flex: 1; margin: 40px 28px 30px; display: flex; flex-direction: column; gap: 22px; }
+  .is-wave .chart { position: relative; flex: 1; border-radius: 30px; padding: 30px; overflow: visible;
+    background: linear-gradient(180deg, #fff, color-mix(in srgb, var(--b-lavender) 35%, #fff)); box-shadow: var(--shadow-card), inset 0 0 0 1.5px var(--line); }
+  .is-wave .legend { display: flex; gap: 22px; }
+  .is-wave .l { display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; color: var(--ink); }
+  .is-wave .l::before { content: ""; width: 34px; height: 6px; border-radius: 999px; }
+  .is-wave .l.wave::before { background: var(--b-orange); }
+  .is-wave .l.steady::before { background: var(--b-mint-text); }
+  .is-wave .plot { position: absolute; left: 50px; right: 30px; top: 86px; bottom: 54px; width: calc(100% - 80px); height: calc(100% - 140px); overflow: visible; }
+  .is-wave .axis { stroke: var(--line); stroke-width: 3; }
+  .is-wave .wave-line { fill: none; stroke: var(--b-orange); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .is-wave .steady-line { fill: none; stroke: var(--b-mint-text); stroke-width: 7; stroke-linecap: round; stroke-dasharray: 2 14; vector-effect: non-scaling-stroke; }
+  .is-wave .ylab { position: absolute; left: 14px; top: 50%; transform: rotate(-90deg) translateX(50%); transform-origin: left top; font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+  .is-wave .xlab { position: absolute; right: 34px; bottom: 18px; font-family: var(--font-mono); font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+  .is-wave .moment { position: absolute; width: 270px; padding: 30px 18px 16px; transform: translate(-50%, -50%); }
+  .is-wave .quote { font-size: 21px; font-weight: 600; line-height: 1.32; color: var(--ink); }

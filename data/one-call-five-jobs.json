@@ -1,0 +1,55 @@
+{
+  "layout": "fan-out",
+  "highlight": "sticker",
+  "title": [
+    "One Call,",
+    "<g>Five Jobs</g> Done"
+  ],
+  "subtitle": "<b>I talk to the client.</b> The recording does the rest.",
+  "source": {
+    "title": "One client call",
+    "sub": "Recorded and transcribed",
+    "logo": "fireflies"
+  },
+  "cards": [
+    {
+      "tag": "Recap",
+      "logo": "gmail",
+      "title": "Follow-up email",
+      "body": "The recap and next step, in my words.",
+      "tool": "Gmail"
+    },
+    {
+      "tag": "CRM",
+      "logo": "hubspot",
+      "title": "Deal updated",
+      "body": "Stage, notes and next date filled in.",
+      "tool": "HubSpot"
+    },
+    {
+      "tag": "Notes",
+      "logo": "notion",
+      "title": "Project page",
+      "body": "What they said, saved where we work.",
+      "tool": "Notion"
+    },
+    {
+      "tag": "Team",
+      "logo": "slack",
+      "title": "Team heads-up",
+      "body": "Who does what, posted in one message.",
+      "tool": "Slack"
+    },
+    {
+      "tag": "Book",
+      "logo": "calendly",
+      "title": "Next call link",
+      "body": "The next session, ready to send.",
+      "tool": "Calendly"
+    }
+  ],
+  "payoff": {
+    "icon": "inbox",
+    "text": "All drafted, waiting for my yes"
+  }
+}
